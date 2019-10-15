@@ -1,9 +1,13 @@
 # Invernadero Inteligente
 
 **Universidad Autonoma del Estado de Mexico**
+
 Valle de Mexico
+
 Presenta:
+
 Noe Vasquez Godinez, noe-x@outlook.com
+
 Ulises Rodrigo Gonzales Osnaya, ulywhy@gmail.com
 
 
