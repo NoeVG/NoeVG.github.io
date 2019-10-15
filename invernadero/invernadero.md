@@ -2,13 +2,13 @@
 
 **Universidad Autonoma del Estado de Mexico**
 
-	Valle de Mexico
+Valle de Mexico
 
 Presenta:
 
-	Noe Vasquez Godinez, noe-x@outlook.com
+Noe Vasquez Godinez, noe-x@outlook.com
 
-	Ulises Rodrigo Gonzales Osnaya, ulywhy@gmail.com
+Ulises Rodrigo Gonzales Osnaya, ulywhy@gmail.com
 
 
 ## Introduccion
