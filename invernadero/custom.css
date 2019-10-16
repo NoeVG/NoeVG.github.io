@@ -9,6 +9,9 @@
   top: 0px;
   left: 10px;
   */
+  font-size: 20px;
+
+
 }
 ul.nav li a, ul.nav li a:visited {
     color: #fff !important;
@@ -36,4 +39,8 @@ ul.nav li.active a {
   top: 0px;
   left: 350px;
   */
+}
+.img-custom{
+  width: 100%;
+  height: auto;
 }

@@ -2,7 +2,6 @@
 ## Introducción
 Se documenta la implementación de un invernadero inteligente, utilizando Arduino y RaspBerry PI.
 
-
 ## Agradecimientos
 Extendemos un agradecimiento al Dr. Carlos Omar Gonzaléz Morán,
 profesor de tiempo completo e investigador
@@ -29,7 +28,7 @@ y tratamiento de los datos mediante Raspberry Pi es pieza clave en el invernader
 
 Agradecemos totalmente a  la Universidad Autónoma del Estado de México,
 en especial al Centro Universitario Valle de México, ya que es en este espacio
-es donde se logro planear la parte de invernadero inteligente.
+academico es donde se logro planear gran parte del invernadero inteligente.
 
 
 ## Invernadero
