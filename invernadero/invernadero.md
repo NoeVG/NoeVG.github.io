@@ -104,28 +104,56 @@ La aplicación de el Internet de las cosas esta basado en la conexión de dispos
 
 Internet de las cosas, es la firma tecnológica que dejara huella de la humanidad en nuestro mundo, **Kevin Ashton** , creador del termino Internet de las Cosas menciona que:
 
-> "si los libros, termostatos, refrigeradores, paquetería,
+> "*si los libros, termostatos, refrigeradores, paquetería,
 lámparas, botiquines, partes automotrices, entre otros, estuvieran conectados a
 Internet y equipados con dispositivos de identificación, no existirían, en teoría,
 artículos fuera de stock o medicinas caducas; sabríamos exactamente su ubicación,
 cómo se consumen en el mundo; el extravío sería cosa del pasado, y sabríamos qué
 está encendido y qué está apagado en todo momento. Internet de las cosas tiene el
-potencial de cambiar el mundo, como hizo Internet en su momento. Tal vez aún más.” --Kevin Ashton--
-
-### Aplicaciones
-
-### Características
-
-### Seguridad
+potencial de cambiar el mundo, como hizo Internet en su momento. Tal vez aún más.*” --Kevin Ashton--
 
 
 ## Arduino
 
-### Historia
+Es un proyecto de código abierto, se basa en el fácil uso de hardware y software, Arduino es una tarjeta para leer y escribir datos provenientes de sensores y actuadores, todo esto a partir de un microcontrolador, el inicio de este proyecto es a apartir del 2005, como un programa para estudiantes en el Interaction Design Institute Ivrea en Ivrea, Italia [("Arduino - Introduction", 2019)](#ARD2019) .
 
 ### Características Arduino
 
+Arduino tiene alta presencia en proyectos de electrónica ya que cuenta con las siguientes características:
+
+- Bajo en costos, los precios para su comprar son muy accesibles, tanto para estudiantes y proyectos.
+- Multiplataforma, su entorno de desarrollo esta disponible para Windows, Macintosh OSX, y GNU/Linux.
+- Ambiente de desarrollo fácil de utilizar y aprender, emplea codigo en C y C++.
+- Open Source, es de código abierto
+- Diseño Hardware libre, los esquemas para el diseño de una tarjeta arduino estan disponibles.
+
 ### IDE Arduino
+Para trabajar con Arduino, una de las opciones es medainte el IDE de Arduino:
+
+<center>
+<img src="https://www.programoergosum.com/images/cursos/253-curso-de-iniciacion-a-arduino/software-arduino-ide.png"
+ style="width : 500px;" />
+</center>
+
+En este IDE las acciones que nos permite realizar son:
+
+- **Verificar:** Al momento de tener código fuente escrito en el editor, esta herramienta
+permite analizar el código mediante su compilador, para detectar problemas y violaciones de sintaxis, sintaxis total de lenguaje C y C++, así mismo verifica si se encuentran inicializadas parámetros para la plataforma Arduino.
+
+- **Cargar:** Cuando es el momento de ejecutar nuestro código en la plataforma Arduino, esta herramienta permite subir el código ya compilador al controlador del
+Arduino.
+
+- **Nuevo:** Ejecuta una instancia nueva y vacía del IDE Arduino
+
+- **Abrir:** Ejecuta una instancia nueva y con algún proyecto Arduino.
+
+- **Guardar:** Guarda el proyecto Arduino, crea un directorio automatico si este no esta.
+
+- **Monitor Serial:** Quizás sea una de las herramientas fundamentales del IDE Arduino, este permite volcar toda la información en la interfaces de conexión serial entre Arduino y la computadora, se puede leer e incluso escribir directamente en la interfaz serial.
+
+- **Editor:** Edición directa del código fuente del proyecto Arduino.
+
+- **Notificaciones:** En esta parte se puede ver los mensajes del estado de las acciones realizadas en el IDE Arduino, muy útil para corregir los errores en nuestro proyecto.  
 
 ## Raspberry PI
 
@@ -240,3 +268,5 @@ potencial de cambiar el mundo, como hizo Internet en su momento. Tal vez aún m�
 1. <a name="HA2016"></a> Hernandez, S., & Alvarez, A. (2019). Invernadero Capilla : Cultivos Bajo Cubierta. Retrieved 16 October 2019, from https://agroinvernaderos.webnode.es/tipos-de-invernaderos/invernadero-capilla/
 
 1. <a name="IEP2019"></a> Invernaderos Túnel - IEP invernaderos. (2019). Retrieved 16 October 2019, from http://www.inverelpilar.com/es/invernaderos/invernaderos-tunel
+
+1. <a name="ARD2019"></a> Arduino - Introduction. (2019). Retrieved 16 October 2019, from https://www.arduino.cc/en/guide/introduction
