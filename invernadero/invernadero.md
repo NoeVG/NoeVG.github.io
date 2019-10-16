@@ -97,7 +97,7 @@ Internet de las cosas promete ser la evolución de Internet, cuyas capacidades p
 Internet de las cosas no solo consiste en un despliegue de computadores y sensores que estén minando datos, también esta relacionado con las capacidades de relaciones entre gobiernos y empresas, esto para permitir un crecimiento crucial y totalmente satisfactorio, mismas relaciones permitirán resolver problemas como el abastecimiento de energía y extensión de redes para la comunicación y sostenibilidad de sensores y procesadores.
 <center>
 <img src="http://cabaseiot.com.ar/wp-content/uploads/2019/07/nota-iprofesional.jpg"
- style="width : 800px;" />
+ style="width : 450px;"/>
 </center>
 
 La aplicación de el Internet de las cosas esta basado en la conexión de dispositivos con los que el ser humano actualmente esta rodeando, esta conexión intercambia información generada por estos mismos, dicha información puede ser para estudio y generar un conocimiento o en la mejor de los casos, para dotar de autonomía a otros dispositivos a partir del cambio y patrones en la información.
