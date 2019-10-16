@@ -155,6 +155,30 @@ Arduino.
 
 - **Notificaciones:** En esta parte se puede ver los mensajes del estado de las acciones realizadas en el IDE Arduino, muy útil para corregir los errores en nuestro proyecto.  
 
+### Arduino hardware
+La tarjeta Arduino se presenta a continuación:
+<center>
+<img src="https://www.arduinohobby.com/wp-content/uploads/2018/07/ARDUINO.jpg"
+ style="width : 500px;" />
+</center>
+
+- **Puerto USB:** Este puerto es la interfaz en la cual se comunica con la computadora, este mismo se emplea para su alimentación, todo el flujo serial se puede realizar mediante este puerto USB.
+
+- **Alimentación externa:** La Alimentación de energía no solo es por USB, este pin se emplea en cuando la tarjeta sera embebida con otros sistemas.
+
+- **Boton Reset:** Al cargar nuestro programa en el microcontrolador de Arduino este comienza a ejecutarse, si requerimos que este se ejecute desde el inicio, el boton reset lo permite.
+
+- **Pines Digitales:** Estos pines están dotados para comunicación digital, tanto para leer y escribir.
+
+- **Led Encendido:** Indica cuando esta alimentado con energía eléctrica la tarjeta Arduino.
+
+- **Pines de Alimentación:** Son de utilidad cuando se requiere alimentar un actuador o sensor.
+
+- **Pines Analógicos:** Estos pines están dotados para comunicación analógica, tanto para leer y escribir.
+
+- **Microcontrolador:** Parte fundamental de Arduino, es el centro de operaciones, el cerebro de Arduino.
+
+
 ## Raspberry PI
 
 ### Historia
