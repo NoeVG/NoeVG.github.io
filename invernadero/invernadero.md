@@ -98,6 +98,8 @@ Internet de las cosas no solo consiste en un despliegue de computadores y sensor
 <center>
 <img src="http://cabaseiot.com.ar/wp-content/uploads/2019/07/nota-iprofesional.jpg"
  style="width : 450px;"/>
+ <br>
+ Fuente de image: http://cabaseiot.com.ar
 </center>
 
 La aplicación de el Internet de las cosas esta basado en la conexión de dispositivos con los que el ser humano actualmente esta rodeando, esta conexión intercambia información generada por estos mismos, dicha información puede ser para estudio y generar un conocimiento o en la mejor de los casos, para dotar de autonomía a otros dispositivos a partir del cambio y patrones en la información.
@@ -133,6 +135,8 @@ Para trabajar con Arduino, una de las opciones es medainte el IDE de Arduino:
 <center>
 <img src="https://www.programoergosum.com/images/cursos/253-curso-de-iniciacion-a-arduino/software-arduino-ide.png"
  style="width : 500px;" />
+ <br>
+ Fuente de image: https://www.programoergosum.com
 </center>
 
 En este IDE las acciones que nos permite realizar son:
@@ -160,6 +164,8 @@ La tarjeta Arduino se presenta a continuación:
 <center>
 <img src="https://www.arduinohobby.com/wp-content/uploads/2018/07/ARDUINO.jpg"
  style="width : 500px;" />
+ <br>
+ Fuente de image: https://www.arduinohobby.com/
 </center>
 
 - **Puerto USB:** Este puerto es la interfaz en la cual se comunica con la computadora, este mismo se emplea para su alimentación, todo el flujo serial se puede realizar mediante este puerto USB.
