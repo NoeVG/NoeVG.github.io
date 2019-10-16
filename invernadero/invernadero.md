@@ -1,4 +1,3 @@
-# Invernadero Inteligente
 
 ## Introducción
 Se documenta la implementación de un invernadero inteligente, utilizando Arduino y RaspBerry PI.
