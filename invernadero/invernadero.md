@@ -54,7 +54,130 @@ La implementación de este tipo es en zonas con poco lluvia, su construcción se
 
 La estructura vertical está constituida por soportes rígidos con funciones perimetrales o interiores, los soportes internos se encuentran a una distancia de 2x2 o 3x4 metros entre si, los soportes perimetrales cuentan con una inclinación de 30 grados hacia el exterior respecto a su vertical, mismos que tienen una separación de 2 a 1.5 metros, el material de estos soportes puede ser tubos de acero, o puntales de madera. En la estructura horizontal encontramos dos mallas de alambre galvanizado superpuestas, estas mallas ayudan al soporte de laminas de plástico. Todos los soportes verticales se encuentran fijados a suelo mediante zapatas de concreto, estos bloques están dentro de pozos para cimentación(AGR2019).
 
+### Invernadero en raspa y amagado
+
+### Invernadero asimetrico
+
+### Invernadero de capilla
+
+### Invernadero de dodble capilla
+
+### Invernadero túnel o semicilíndrico
+
+### Cuidado ambiental
+
+
 ## Internet de las cosas
+
+### Aplicaciones
+
+### Características
+
+### Seguridad
+
+
+## Arduino
+
+### Historia
+
+### Características Arduino
+
+### IDE Arduino
+
+## Raspberry PI
+
+### Historia
+
+### Características Raspberry PI
+
+### Lenguaje de programación
+
+## Invernadero Inteligente
+
+### Propósito
+
+### Recursos
+
+#### Hardware
+
+#### Software
+
+## Invernadero caso practico
+
+### Lugar del invernadero
+
+### Propósito de este invernadero
+
+### Necesidad de este invernadero
+
+## Propuesta de invernadero
+
+### Objetivos
+
+### Funcionamiento
+
+
+## Desarrollo
+
+### Hardware
+
+#### Plataformas
+
+#### Sensores
+
+### Software
+
+#### Programación en arduino
+
+#### Programación en python
+
+#### DashBoard web con angular
+
+#### DashBoard local con python
+
+## Instalación
+
+### Arduino esclavo y maestro
+
+### RaspBerry PI maestro
+
+### Diagrama de instalación
+
+## Trabajando con sensores
+
+### Simulación
+
+### Armado físico
+
+### Instalacion fisica
+
+## Desarrollo del software para Arduino
+
+### Diagramas de flujo Arduino
+
+## Desarrollo del software para RaspBerry PI
+
+### Diagramas de flujo RaspBerry PI
+
+## Conectando software Arduino con RaspBerry PI
+
+## Ejecución de invernadero
+
+### Temperatura ambiente
+
+### Temperatura del suelo
+
+### Humedad del suelo
+
+### Electrovalvula
+
+## Desarrollo futuro
+
+### Otros sensores
+
+### Automatizaciones
+
+### Notas finales
 
 ## Referencias
 1. [MIS2014] Miserendino E. ,Astorquizaga R. (2014). Invernaderos: aspectos básicos sobre estructura, construcción y condiciones ambientales [Ebook] (p. 1). Retrieved https://inta.gob.ar/sites/default/files/script-tmpinta_agricultura23_invernadero.pdf.
