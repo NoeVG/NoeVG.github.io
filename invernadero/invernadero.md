@@ -32,7 +32,33 @@ academico es donde se logro planear gran parte del invernadero inteligente.
 
 
 ## Invernadero
-Cammbios
-Un invernadero, estufa fría o invernáculo, es un lugar cerrado, estático y accesible a pie que se destina al cultivo de plantas, tanto decorativas como huertícolas, para protegerlas del exceso de frío en ciertas épocas del año. Habitualmente está dotado de una cubierta exterior translúcida de vidrio o de plástico, que permite el control de la temperatura, la humedad y otros factores ambientales, que se utiliza para favorecer el desarrollo de las plantas.
+Parte fundamental de este trabajo esta relacionado con los invernaderos, a continuación se describe lo que es un invernadero así como sus características y funciones, un invernadero necesita manejar adecuadamente temperaturas de ambiente y suelo, mantener bajo control estas variables de medición garantizan aprovechar todos los beneficios que un invernadero proporciona.
+
+### Definición de Invernadero
+Un invernadero es aquella estructura cerrada, el nivel de tecnificacion con el que cuente es de acuerdo a las necesidades que se necesiten cubrir, mantener una produccion alta es el objectivo principal de un invernadero(Marin20139.
+
+Parte de la estructura del invernadero  se encuentra cubierta por materiales que permiten la entrada de los rayos del sol, esto provoca una ambiente artificial, optimo para el cultivo de plantas(MiseAsto2014).
+
+Los invernaderos se encuentran clasificados en:
+
+1. Invernaderos planos o tipo parral
+1. Invernadero en raspa y amagado
+1. Invernadero asimétrico
+1. Invernaderos de capilla
+1. Invernaderos de doble capilla
+1. Invernadero túnel o semicilíndrico
+
+### Invernaderos planos o tipo parral
+
+La implementación de este tipo es en zonas con poco lluvia, su construcción se encuentra en dos partes, estructura vertical y horizontal.
+
+La estructura vertical está constituida por soportes rígidos con funciones perimetrales o interiores, los soportes internos se encuentran a una distancia de 2x2 o 3x4 metros entre si, los soportes perimetrales cuentan con una inclinación de 30 grados hacia el exterior respecto a su vertical, mismos que tienen una separación de 2 a 1.5 metros, el material de estos soportes puede ser tubos de acero, o puntales de madera. En la estructura horizontal encontramos dos mallas de alambre galvanizado superpuestas, estas mallas ayudan al soporte de laminas de plástico. Todos los soportes verticales se encuentran fijados a suelo mediante zapatas de concreto, estos bloques están dentro de pozos para cimentación(AGR2019).
 
 ## Internet de las cosas
+
+## Referencias
+1. [MIS2014] Miserendino E. ,Astorquizaga R. (2014). Invernaderos: aspectos básicos sobre estructura, construcción y condiciones ambientales [Ebook] (p. 1). Retrieved https://inta.gob.ar/sites/default/files/script-tmpinta_agricultura23_invernadero.pdf.
+
+1. [MAR2013] C. Marín, M. (2013). Diseño de Invernaderos [Ebook] (p. 3). Retrieved https://www.portalfruticola.com/assets/uploads/2017/07/Manual-de-Invernaderos-2.pdf.
+
+1. [AGR2019] Agroinformación. Tipos de invernaderos. (2019). Retrieved 9 October 2019, from http://www.abcagro.com/industria_auxiliar/tipo_invernaderos2.asp
