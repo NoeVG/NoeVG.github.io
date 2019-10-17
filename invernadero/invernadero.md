@@ -383,11 +383,7 @@ El control de riego y la iluminación también estará disponible en la visualiz
 </center>
 <br>
 
-## Desarrollo
-
-### Hardware
-
-#### Tarjetas
+### Tarjetas
 <center>
 
 |Cantidad |Tarjeta | Aplicación |Imagen |
@@ -398,7 +394,7 @@ El control de riego y la iluminación también estará disponible en la visualiz
 
 </center>
 
-#### Sensores y otros
+### Sensores y otros
 
 <center>
 
@@ -411,46 +407,46 @@ El control de riego y la iluminación también estará disponible en la visualiz
 
 </center>
 
+## Software
 
-#### Plataformas
+Se expone los lenguajes de programación a emplear relacionado a la construcción del software, así mismo se muestra la lógica de cada modulo mediante diagramas de flujo,
+esto con la finalidad de comprender el funcionamiento en cada tarjeta, los lenguajes de programación dependen de la plataforma en las que se estará trabajando.
 
-#### Sensores
+La plataforma Arduino se programa mediante el uso de un lenguaje propio basado en el lenguaje de programación de alto nivel Processing que es similar a C++, para RaspBerry PI se emplea Python, un lenguaje que contiene gran cantidad módulos ya listos para trabajar con especificaciones propias de Raspberry PI y como parte final para los DashBoard se empleara el Framework Angular para el Front-End  y Express para el Back-End, ambos propios de Nodejs, en el caso del DashBoard local se usara Python con QtPSyde2 para las tareas graficas.
 
-### Software
+### Programación en Arduino
 
-#### Programación en arduino
+### Programación en Python
 
-#### Programación en python
+### DashBoard web con Angular 8
 
-#### DashBoard web con angular
+### DashBoard local con Python
 
-#### DashBoard local con python
-
-## Instalación
-
-### Arduino esclavo y maestro
-
-### RaspBerry PI maestro
-
-### Diagrama de instalación
 
 ## Trabajando con sensores
 
 ### Simulación
 
-### Armado físico
 
-### Instalacion fisica
+## Instalación
 
-## Desarrollo del software para Arduino
+### Maestro y Esclavo
 
-### Diagramas de flujo Arduino
+### RaspBerry PI maestro
 
-## Desarrollo del software para RaspBerry PI
+### Instalando Sensores
 
-### Diagramas de flujo RaspBerry PI
 
-## Conectando software Arduino con RaspBerry PI
+## Desarrollo del software
+
+### Programando Arduino
+
+### Programando Raspberry PI
+
+### DashBoard Local
+
+### DashBoard Remoto
+
 
 ## Ejecución de invernadero
 
