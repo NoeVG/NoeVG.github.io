@@ -390,7 +390,7 @@ El control de riego y la iluminación también estará disponible en la visualiz
 #### Tarjetas
 <center>
 
-|Cantidad |Tarjeta | Aplicacion |Image |
+|Cantidad |Tarjeta | Aplicación |Imagen |
 |:----------:|:--------:|:------------:|:------:|
 | 4 | Arduinos | Esclavo, recopilación de datos desde sensores|<img src="https://www.steren.com.mx/media/catalog/product/cache/b69086f136192bea7a4d681a8eaf533d/a/r/ard-010_x1_12.jpg" style="width : 100px;" class="img-fluid img-thumbnail"/>|
 | 1 |Arduino | Maestro, lógica de operación.|<img src="https://www.steren.com.mx/media/catalog/product/cache/b69086f136192bea7a4d681a8eaf533d/a/r/ard-010_x1_12.jpg" style="width : 100px;" class="img-fluid img-thumbnail"/>|
@@ -402,7 +402,7 @@ El control de riego y la iluminación también estará disponible en la visualiz
 
 <center>
 
-|Cantidad |Tarjeta | Aplicacion |Image |
+|Cantidad |Tarjeta | Aplicación |Imagen |
 |:----------:|:--------:|:------------:|:------:|
 | 12 | Sensor Humedad de Suelo | Se obtiene la huemdad del suelo mediante la resistencia en la tierra|<img src="https://images-na.ssl-images-amazon.com/images/I/31Z4onh5hyL.jpg" style="width : 100px;" class="img-fluid img-thumbnail"/>|
 | 13 |Sensor dht11 | Temperatura y humedad ambiente.|<img src="https://store.prometec.net/wp-content/uploads/2019/06/dht11.jpg" style="width : 100px;" class="img-fluid img-thumbnail"/>|
