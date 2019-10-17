@@ -97,9 +97,12 @@ Internet de las cosas promete ser la evolución de Internet, cuyas capacidades p
 Internet de las cosas no solo consiste en un despliegue de computadores y sensores que estén minando datos, también esta relacionado con las capacidades de relaciones entre gobiernos y empresas, esto para permitir un crecimiento crucial y totalmente satisfactorio, mismas relaciones permitirán resolver problemas como el abastecimiento de energía y extensión de redes para la comunicación y sostenibilidad de sensores y procesadores.
 <center>
 <img src="http://cabaseiot.com.ar/wp-content/uploads/2019/07/nota-iprofesional.jpg"
- style="width : 450px;"/>
+ style="width : 450px;"
+ class="img-fluid img-thumbnail"
+ />
  <br>
- Fuente de image: http://cabaseiot.com.ar
+ Fuente de la imagen:
+ <a href ="http://cabaseiot.com.ar" >http://cabaseiot.com.ar</a>
 </center>
 
 La aplicación de el Internet de las cosas esta basado en la conexión de dispositivos con los que el ser humano actualmente esta rodeando, esta conexión intercambia información generada por estos mismos, dicha información puede ser para estudio y generar un conocimiento o en la mejor de los casos, para dotar de autonomía a otros dispositivos a partir del cambio y patrones en la información.
@@ -134,9 +137,11 @@ Para trabajar con Arduino, una de las opciones es medainte el IDE de Arduino:
 
 <center>
 <img src="https://www.programoergosum.com/images/cursos/253-curso-de-iniciacion-a-arduino/software-arduino-ide.png"
- style="width : 500px;" />
+ style="width : 500px;"
+class="img-fluid img-thumbnail"
+ />
  <br>
- Fuente de image: https://www.programoergosum.com
+ Fuente de image: <a href="https://www.programoergosum.com">https://www.programoergosum.com</a>
 </center>
 
 En este IDE las acciones que nos permite realizar son:
@@ -163,9 +168,11 @@ Arduino.
 La tarjeta Arduino se presenta a continuación:
 <center>
 <img src="https://www.arduinohobby.com/wp-content/uploads/2018/07/ARDUINO.jpg"
- style="width : 500px;" />
+ style="width : 500px;"
+ class="img-fluid img-thumbnail"
+ />
  <br>
- Fuente de image: https://www.arduinohobby.com/
+ Fuente de image: <a href="https://www.arduinohobby.com/" >https://www.arduinohobby.com/</a>
 </center>
 
 - **Puerto USB:** Este puerto es la interfaz en la cual se comunica con la computadora, este mismo se emplea para su alimentación, todo el flujo serial se puede realizar mediante este puerto USB.
@@ -187,11 +194,53 @@ La tarjeta Arduino se presenta a continuación:
 
 ## Raspberry PI
 
-### Historia
+Es una pequeña computadora, con un precio muy accesible para proyectos escolares o iniciales, esta mantiene puertos para conectarse tanto a un display dedicado o un monitor, las conexiones para teclado y mouse son mediante puerto USB, se puede instalar sistemas operativos GNU/Linux. El mayor provecho que se obtiene de Raspberry PI, es su posibilidad de interactuar con una gama alta de sensores, volviéndola muy atractiva para proyectos de electrónica [("Raspberry Pi Foundation - About Us", 2019)](#RAP2019).
 
 ### Características Raspberry PI
 
+Cuando es necesario realizar actividades de automatización o de internet de las cosas con alto rendimiento, Raspberry PI se vuelve una opción muy atractiva, Raspberry PI cuenta con las siguientes características:
+
+- Micro Ordenador o cumputadora SBC, de bajo costo
+
+- Dimensiones pequeñas
+
+- Microprocesador ARM con potencia de hasta 1 GHz
+
+- Los primeros modelos con 512MB de Ran, actualmente ya tiene 1 Gb
+
+- Incluyen una GPU Videocore IV
+
+- Los Sistemas Operativos que se pueden instalar son: Raspbian, Arch Linux, RaspBMC, Pidora u OpenELEC, Windows 10.
+
 ### Lenguaje de programación
+
+Los lenguajes de programación que esta soporta, están relacionados con el sistema operativo que se instale en la RaspBerry PI, al instalar sistemas GNU/Linux, prácticamente los lenguajes de programación más comunes pueden hacerse uso en la RaspBerry PI, tales como Java, JavasScript, C++, C, Python.
+
+Siendo el lenguaje Python, el más empleado, tanto es el uso de Python en Raspberry Pi que ya se encuentran módulos en python para trabajar directamente con características propias de Raspberry Pi.
+
+### Raspberry PI Hardware
+Parte del hardware de raspberry PI es muy similar a las computadoras convencionales, sin embargo el puerto GPIO , es lo especial de Raspberry PI.
+
+<center>
+<img src="http://makermex.com/web/image/4340?access_token=0113bb6d-8f8b-44cf-ba0b-feb79ff6e04f"
+ style="width : 500px;"
+ class="img-fluid img-thumbnail"
+ />
+ <br>
+ Fuente de image: <a href="http://makermex.com">http://makermex.com</a>
+</center>
+
+El puerto General Purpose Input Output (GPIO), consta de pines que se pueden emplear como entradas y salidas de múltiple propósito, se encuentran en todas las Raspberry PI, pero con disposiciones diferentes.
+
+<center>
+<img src="http://makermex.com/web/image/4341?access_token=247aa22b-572f-41dd-b502-6f26f77b7525"
+ style="width : 500px;"
+ class="img-fluid img-thumbnail"
+ />
+ <br>
+ Fuente de image: <a href="http://makermex.com">http://makermex.com</a>
+</center>
+
 
 ## Invernadero Inteligente
 
@@ -300,3 +349,5 @@ La tarjeta Arduino se presenta a continuación:
 1. <a name="IEP2019"></a> Invernaderos Túnel - IEP invernaderos. (2019). Retrieved 16 October 2019, from http://www.inverelpilar.com/es/invernaderos/invernaderos-tunel
 
 1. <a name="ARD2019"></a> Arduino - Introduction. (2019). Retrieved 16 October 2019, from https://www.arduino.cc/en/guide/introduction
+
+1. <a name="RAP2019"><a/> Raspberry Pi Foundation - About Us. (2019). Retrieved 16 October 2019, from https://www.raspberrypi.org/about/
