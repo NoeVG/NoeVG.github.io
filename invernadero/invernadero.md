@@ -241,8 +241,15 @@ El puerto General Purpose Input Output (GPIO), consta de pines que se pueden emp
  Fuente de image: <a href="http://makermex.com">http://makermex.com</a>
 </center>
 
-
 ## Invernadero Inteligente
+
+En las secciones anteriores, se exponen herramientas que permiten ser parte de soluciones para actividades que en la actualidad necesitan emplear recursos digitales e informáticos.
+
+Una de las actividades en las que hacer uso de sensores, actuadores,  y tarjetas de uso general, es la implementación de Invernaderos Inteligentes.
+
+En los invernaderos inteligentes se hace uso de dispositivos que estén automatizando actividades como es el riego y ventilación de un invernadero.
+
+En un invernadero existen variables como la temperatura tanto del ambiente y área próxima de los cultivos, humedad de la tierra y del ambiente, que el conocerlas de forma precisa, permitirá una optimización del invernadero.
 
 ### Propósito
 
