@@ -415,6 +415,18 @@ esto con la finalidad de comprender el funcionamiento en cada tarjeta, los lengu
 La plataforma Arduino se programa mediante el uso de un lenguaje propio basado en el lenguaje de programación de alto nivel Processing que es similar a C++, para RaspBerry PI se emplea Python, un lenguaje que contiene gran cantidad módulos ya listos para trabajar con especificaciones propias de Raspberry PI y como parte final para los DashBoard se empleara el Framework Angular para el Front-End  y Express para el Back-End, ambos propios de Nodejs, en el caso del DashBoard local se usara Python con QtPSyde2 para las tareas graficas.
 
 ### Programación en Arduino
+Diagrama de flujo de datos para arduino maestro
+<center>
+<img src="./img/photos/diagramaMaestroArduino.png"
+ style="width : 500px;"
+ class="img-fluid img-thumbnail"
+ />
+ <br><br>
+ Diagrama de flujo para Arduino Maestro.
+</center>
+<br>
+<br>
+
 
 ### Programación en Python
 
