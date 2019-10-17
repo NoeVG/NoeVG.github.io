@@ -249,34 +249,168 @@ Una de las actividades en las que hacer uso de sensores, actuadores,  y tarjetas
 
 En los invernaderos inteligentes se hace uso de dispositivos que estén automatizando actividades como es el riego y ventilación de un invernadero.
 
-En un invernadero existen variables como la temperatura tanto del ambiente y área próxima de los cultivos, humedad de la tierra y del ambiente, que el conocerlas de forma precisa, permitirá una optimización del invernadero.
+En un invernadero existen variables como la temperatura tanto del ambiente y del área próxima de los cultivos, así como la humedad de la tierra y del ambiente, que el conocerlas de forma precisa permitirá una optimización del invernadero.
 
 ### Propósito
 
-### Recursos
+Mediante el uso de sensores y actuadores, automatizar ciertas acciones en un invernadero, ciertas acciones pueden cubrir:
 
-#### Hardware
+- Control climático
 
-#### Software
+- Control de riego
+
+- Control de temperatura
+
+- Control de humedad
+
+En otra parte toda la información que surge de estos controles,
+se puede almacenar en una base de datos, para su posterior análisis,
+esto con la finalidad aumentar el rendimiento de un invernadero.
 
 ## Invernadero caso practico
 
-### Lugar del invernadero
+En el DIF (Sistema Nacional para el Desarrollo Integral
+de la Familia) del Estado de México, se ha puesto en marcha la instalación de un invernadero, esta actividad esta bajo la supervisión del Ing. Crystian Pichardo González, jefe del departamento de
+nutrición de esta misma institución.
 
-### Propósito de este invernadero
+En este invernadero, se desea controlar y automatizar ciertas actividades, es por ello que se es necesario realizar la planeación e implementación de recursos para volver este invernadero a uno inteligente.
 
-### Necesidad de este invernadero
+### Ubicación del invernadero
 
-## Propuesta de invernadero
+El invernadero se encuentra con ubicación en Av.
+Convento de Santa Mónica s/n , esq. Convento de San Fernando,
+Fraccionamiento Jardines de Santa Mónica, Tlalnepantla de Baz,
+Estado de México.
+<center>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1580.971886326558!2d-99.22559526049773!3d19.532766216886834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d21d2fa71d0325%3A0xc1d34267777fa1a0!2sDIF%20Tlanepantla!5e0!3m2!1sen!2smx!4v1571329249050!5m2!1sen!2smx" width="400" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</center>
 
-### Objetivos
 
-### Funcionamiento
+<center>
+<img src="http://www.tlalnepantla.gob.mx/img/noticias/4880.jpg"
+ style="width : 500px;"
+ class="img-fluid img-thumbnail"
+ />
+ <br>
+ Fuente de image: <a href="http://www.tlalnepantla.gob.mx">http://www.tlalnepantla.gob.mx</a>
+</center>
 
+### Especificaciones del invernadero
+
+<center>
+<img src="./img/photos/IMG_20190902_110102.jpg"
+ style="width : 500px;"
+ class="img-fluid img-thumbnail"
+ />
+ <br>
+ Primer plano del diseño del invernadero.
+</center>
+
+El invernadero estará trabajando con 4 parcelas, en estas parcelas se mantendrá el cultivo de rábanos, lechugas y cilantro.
+
+<center>
+<img src="./img/photos/IMG_20190902_095649.jpg"
+ style="width : 500px;"
+ class="img-fluid img-thumbnail"
+ />
+ <br><br>
+ Cultivo de Lechugas.
+</center>
+<br>
+<br>
+<center>
+<img src="./img/photos/IMG_20190919_094441.jpg"
+ style="width : 500px;"
+ class="img-fluid img-thumbnail"
+ />
+ <br>
+ Invernadero.
+</center>
+
+
+En el siguiente plano se puede comprender con mas detalle las dimensiones del invernadero:
+
+### Necesidades en este invernadero
+
+En este invernadero se necesita controlar las siguientes variables:
+
+- Control de humedad de tierra
+
+- Control de temperatura de tierra
+
+- Control de temperatura ambiente
+
+En automatización se desea realizar lo siguiente:
+
+- Control de riego
+
+- Control de iluminación con bombillas.
+
+Toda la información que se genere, es necesario recopilarla en una base de datos, para mostrar el historial y comportamiento de las variables como lo son temperatura y humedad, toda esta información debe visualizar de forma local en el invernadero y remotamente.
+
+## Propuesta de Invernadero Inteligente
+
+En cada parcela se instalaran sensores de humedad para tierra, así mismo sensores de humedad y temperatura ambiente, así mismo el riego para cada parcela estará controlado por electrovalvulas, la iluminación se realzara con bombillas, estos dos últimos estarán controlados mediante módulos relé, los cuales con pulsos electrónicos establecerán el encendido o apagado de cada uno.
+
+<center>
+<img src="./img/photos/diagramaSensoresGeneral.png"
+ style="width : 600px;"
+ class="img-fluid img-thumbnail"
+ />
+ <br><br>
+ Diagrama general de parcelas y sensores.
+</center>
+<br>
+Los sensores proporcionaran datos a las tarjetas Arduino, cada parcela estará dotada de una tarjeta Arduino, las cuales estarán controladas con un Arduino delegado como maestro, la comunicación entre los Arduinos (esclavos) con el Arduino (maestro) es mediante el protocolo conocido como I2C (Inter-integrated Circuit).
+
+El envió de datos para su análisis se realizara mediante una tarjeta Raspberry PI, estos datos son obtenidos mediante la interfaz serial entre Raspberry PI y el Arduino maestro.
+
+La visualización de estos datos se presentara en dos posibles formas:
+
+- **Local:** Los datos se visualizaran directo en la Raspberry PI.
+
+- **Remota:** Los datos se rescataran de la base de datos que la Raspberry PI estará alimentando, se empelara una aplicación WEB para poder mostrarlos.
+
+El control de riego y la iluminación también estará disponible en la visualización de los datos.
+
+<center>
+<img src="./img/photos/diagramaSensoresGeneralArduinos.png"
+ style="width : 600px;"
+ class="img-fluid img-thumbnail"
+ />
+ <br><br>
+ Diagrama general comunicación.
+</center>
+<br>
 
 ## Desarrollo
 
 ### Hardware
+
+#### Tarjetas
+<center>
+
+|Cantidad |Tarjeta | Aplicacion |Image |
+|:----------:|:--------:|:------------:|:------:|
+| 4 | Arduinos | Esclavo, recopilación de datos desde sensores|<img src="https://www.steren.com.mx/media/catalog/product/cache/b69086f136192bea7a4d681a8eaf533d/a/r/ard-010_x1_12.jpg" style="width : 100px;" class="img-fluid img-thumbnail"/>|
+| 1 |Arduino | Maestro, lógica de operación.|<img src="https://www.steren.com.mx/media/catalog/product/cache/b69086f136192bea7a4d681a8eaf533d/a/r/ard-010_x1_12.jpg" style="width : 100px;" class="img-fluid img-thumbnail"/>|
+| 1 |RaspBerry PI | Envio de datos a base datos.|<img src="https://cdn-reichelt.de/bilder/web/xxl_ws/A300/RASP_03_01.png" style="width : 100px;" class="img-fluid img-thumbnail"/>|
+
+</center>
+
+#### Sensores y otros
+
+<center>
+
+|Cantidad |Tarjeta | Aplicacion |Image |
+|:----------:|:--------:|:------------:|:------:|
+| 12 | Sensor Humedad de Suelo | Se obtiene la huemdad del suelo mediante la resistencia en la tierra|<img src="https://images-na.ssl-images-amazon.com/images/I/31Z4onh5hyL.jpg" style="width : 100px;" class="img-fluid img-thumbnail"/>|
+| 13 |Sensor dht11 | Temperatura y humedad ambiente.|<img src="https://store.prometec.net/wp-content/uploads/2019/06/dht11.jpg" style="width : 100px;" class="img-fluid img-thumbnail"/>|
+| 3 |Electrovalvulas | Abren o cierrann el flujo de agua|<img src="https://images-na.ssl-images-amazon.com/images/I/41pAB6kBJEL._SX466_.jpg" style="width : 100px;" class="img-fluid img-thumbnail"/>|
+| 2 |Relé | Permite controlar dispositvos con AC o DC mayor de 5v |<img src="https://cdn-tienda.bricogeek.com/3535-thickbox_default/modulo-4-reles-5v.jpg" style="width : 100px;" class="img-fluid img-thumbnail"/>|
+
+</center>
+
 
 #### Plataformas
 

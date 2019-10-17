@@ -140,23 +140,172 @@ La tarjeta Arduino se presenta a continuación:
 <p>En las secciones anteriores, se exponen herramientas que permiten ser parte de soluciones para actividades que en la actualidad necesitan emplear recursos digitales e informáticos.</p>
 <p>Una de las actividades en las que hacer uso de sensores, actuadores, y tarjetas de uso general, es la implementación de Invernaderos Inteligentes.</p>
 <p>En los invernaderos inteligentes se hace uso de dispositivos que estén automatizando actividades como es el riego y ventilación de un invernadero.</p>
-<p>En un invernadero existen variables como la temperatura tanto del ambiente y área próxima de los cultivos, humedad de la tierra y del ambiente, que el conocerlas de forma precisa, permitirá una optimización del invernadero.</p>
+<p>En un invernadero existen variables como la temperatura tanto del ambiente y del área próxima de los cultivos, así como la humedad de la tierra y del ambiente, que el conocerlas de forma precisa permitirá una optimización del invernadero.</p>
 <h3 id="propósito">Propósito</h3>
-<h3 id="recursos">Recursos</h3>
-<h4 id="hardware">Hardware</h4>
-<h4 id="software">Software</h4>
+<p>Mediante el uso de sensores y actuadores, automatizar ciertas acciones en un invernadero, ciertas acciones pueden cubrir:</p>
+<ul>
+<li><p>Control climático</p></li>
+<li><p>Control de riego</p></li>
+<li><p>Control de temperatura</p></li>
+<li><p>Control de humedad</p></li>
+</ul>
+<p>En otra parte toda la información que surge de estos controles, se puede almacenar en una base de datos, para su posterior análisis, esto con la finalidad aumentar el rendimiento de un invernadero.</p>
 <h2 id="invernadero-caso-practico">Invernadero caso practico</h2>
-<h3 id="lugar-del-invernadero">Lugar del invernadero</h3>
-<h3 id="propósito-de-este-invernadero">Propósito de este invernadero</h3>
-<h3 id="necesidad-de-este-invernadero">Necesidad de este invernadero</h3>
-<h2 id="propuesta-de-invernadero">Propuesta de invernadero</h2>
-<h3 id="objetivos">Objetivos</h3>
-<h3 id="funcionamiento">Funcionamiento</h3>
+<p>En el DIF (Sistema Nacional para el Desarrollo Integral de la Familia) del Estado de México, se ha puesto en marcha la instalación de un invernadero, esta actividad esta bajo la supervisión del Ing. Crystian Pichardo González, jefe del departamento de nutrición de esta misma institución.</p>
+<p>En este invernadero, se desea controlar y automatizar ciertas actividades, es por ello que se es necesario realizar la planeación e implementación de recursos para volver este invernadero a uno inteligente.</p>
+<h3 id="ubicación-del-invernadero">Ubicación del invernadero</h3>
+El invernadero se encuentra con ubicación en Av. Convento de Santa Mónica s/n , esq. Convento de San Fernando, Fraccionamiento Jardines de Santa Mónica, Tlalnepantla de Baz, Estado de México.
+<center>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1580.971886326558!2d-99.22559526049773!3d19.532766216886834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d21d2fa71d0325%3A0xc1d34267777fa1a0!2sDIF%20Tlanepantla!5e0!3m2!1sen!2smx!4v1571329249050!5m2!1sen!2smx" width="400" height="350" frameborder="0" style="border:0;" allowfullscreen>
+</iframe>
+</center>
+<center>
+<img src="http://www.tlalnepantla.gob.mx/img/noticias/4880.jpg"
+ style="width : 500px;"
+ class="img-fluid img-thumbnail"
+ /> <br> Fuente de image: <a href="http://www.tlalnepantla.gob.mx">http://www.tlalnepantla.gob.mx</a>
+</center>
+<h3 id="especificaciones-del-invernadero">Especificaciones del invernadero</h3>
+<center>
+<img src="./img/photos/IMG_20190902_110102.jpg"
+ style="width : 500px;"
+ class="img-fluid img-thumbnail"
+ /> <br> Primer plano del diseño del invernadero.
+</center>
+<p>El invernadero estará trabajando con 4 parcelas, en estas parcelas se mantendrá el cultivo de rábanos, lechugas y cilantro.</p>
+<center>
+<img src="./img/photos/IMG_20190902_095649.jpg"
+ style="width : 500px;"
+ class="img-fluid img-thumbnail"
+ /> <br><br> Cultivo de Lechugas.
+</center>
+<br> <br>
+<center>
+<img src="./img/photos/IMG_20190919_094441.jpg"
+ style="width : 500px;"
+ class="img-fluid img-thumbnail"
+ /> <br> Invernadero.
+</center>
+<p>En el siguiente plano se puede comprender con mas detalle las dimensiones del invernadero:</p>
+<h3 id="necesidades-en-este-invernadero">Necesidades en este invernadero</h3>
+<p>En este invernadero se necesita controlar las siguientes variables:</p>
+<ul>
+<li><p>Control de humedad de tierra</p></li>
+<li><p>Control de temperatura de tierra</p></li>
+<li><p>Control de temperatura ambiente</p></li>
+</ul>
+<p>En automatización se desea realizar lo siguiente:</p>
+<ul>
+<li><p>Control de riego</p></li>
+<li><p>Control de iluminación con bombillas.</p></li>
+</ul>
+<p>Toda la información que se genere, es necesario recopilarla en una base de datos, para mostrar el historial y comportamiento de las variables como lo son temperatura y humedad, toda esta información debe visualizar de forma local en el invernadero y remotamente.</p>
+<h2 id="propuesta-de-invernadero-inteligente">Propuesta de Invernadero Inteligente</h2>
+<p>En cada parcela se instalaran sensores de humedad para tierra, así mismo sensores de humedad y temperatura ambiente, así mismo el riego para cada parcela estará controlado por electrovalvulas, la iluminación se realzara con bombillas, estos dos últimos estarán controlados mediante módulos relé, los cuales con pulsos electrónicos establecerán el encendido o apagado de cada uno.</p>
+<center>
+<img src="./img/photos/diagramaSensoresGeneral.png"
+ style="width : 600px;"
+ class="img-fluid img-thumbnail"
+ /> <br><br> Diagrama general de parcelas y sensores.
+</center>
+<p><br> Los sensores proporcionaran datos a las tarjetas Arduino, cada parcela estará dotada de una tarjeta Arduino, las cuales estarán controladas con un Arduino delegado como maestro, la comunicación entre los Arduinos (esclavos) con el Arduino (maestro) es mediante el protocolo conocido como I2C (Inter-integrated Circuit).</p>
+<p>El envió de datos para su análisis se realizara mediante una tarjeta Raspberry PI, estos datos son obtenidos mediante la interfaz serial entre Raspberry PI y el Arduino maestro.</p>
+<p>La visualización de estos datos se presentara en dos posibles formas:</p>
+<ul>
+<li><p><strong>Local:</strong> Los datos se visualizaran directo en la Raspberry PI.</p></li>
+<li><p><strong>Remota:</strong> Los datos se rescataran de la base de datos que la Raspberry PI estará alimentando, se empelara una aplicación WEB para poder mostrarlos.</p></li>
+</ul>
+<p>El control de riego y la iluminación también estará disponible en la visualización de los datos.</p>
+<center>
+<img src="./img/photos/diagramaSensoresGeneralArduinos.png"
+ style="width : 600px;"
+ class="img-fluid img-thumbnail"
+ /> <br><br> Diagrama general comunicación.
+</center>
+<p><br></p>
 <h2 id="desarrollo">Desarrollo</h2>
-<h3 id="hardware-1">Hardware</h3>
+<h3 id="hardware">Hardware</h3>
+<h4 id="tarjetas">Tarjetas</h4>
+<center>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Cantidad</th>
+<th style="text-align: center;">Tarjeta</th>
+<th style="text-align: center;">Aplicacion</th>
+<th style="text-align: center;">Image</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">Arduinos</td>
+<td style="text-align: center;">Esclavo, recopilación de datos desde sensores</td>
+<td style="text-align: center;"><img src="https://www.steren.com.mx/media/catalog/product/cache/b69086f136192bea7a4d681a8eaf533d/a/r/ard-010_x1_12.jpg" style="width : 100px;" class="img-fluid img-thumbnail"/></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">Arduino</td>
+<td style="text-align: center;">Maestro, lógica de operación.</td>
+<td style="text-align: center;"><img src="https://www.steren.com.mx/media/catalog/product/cache/b69086f136192bea7a4d681a8eaf533d/a/r/ard-010_x1_12.jpg" style="width : 100px;" class="img-fluid img-thumbnail"/></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">RaspBerry PI</td>
+<td style="text-align: center;">Envio de datos a base datos.</td>
+<td style="text-align: center;"><img src="https://cdn-reichelt.de/bilder/web/xxl_ws/A300/RASP_03_01.png" style="width : 100px;" class="img-fluid img-thumbnail"/></td>
+</tr>
+</tbody>
+</table>
+</center>
+<h4 id="sensores-y-otros">Sensores y otros</h4>
+<center>
+<table>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 22%" />
+<col style="width: 31%" />
+<col style="width: 18%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Cantidad</th>
+<th style="text-align: center;">Tarjeta</th>
+<th style="text-align: center;">Aplicacion</th>
+<th style="text-align: center;">Image</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">Sensor Humedad de Suelo</td>
+<td style="text-align: center;">Se obtiene la huemdad del suelo mediante la resistencia en la tierra</td>
+<td style="text-align: center;"><img src="https://images-na.ssl-images-amazon.com/images/I/31Z4onh5hyL.jpg" style="width : 100px;" class="img-fluid img-thumbnail"/></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">13</td>
+<td style="text-align: center;">Sensor dht11</td>
+<td style="text-align: center;">Temperatura y humedad ambiente.</td>
+<td style="text-align: center;"><img src="https://store.prometec.net/wp-content/uploads/2019/06/dht11.jpg" style="width : 100px;" class="img-fluid img-thumbnail"/></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">Electrovalvulas</td>
+<td style="text-align: center;">Abren o cierrann el flujo de agua</td>
+<td style="text-align: center;"><img src="https://images-na.ssl-images-amazon.com/images/I/41pAB6kBJEL._SX466_.jpg" style="width : 100px;" class="img-fluid img-thumbnail"/></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">Relé</td>
+<td style="text-align: center;">Permite controlar dispositvos con AC o DC mayor de 5v</td>
+<td style="text-align: center;"><img src="https://cdn-tienda.bricogeek.com/3535-thickbox_default/modulo-4-reles-5v.jpg" style="width : 100px;" class="img-fluid img-thumbnail"/></td>
+</tr>
+</tbody>
+</table>
+</center>
 <h4 id="plataformas">Plataformas</h4>
 <h4 id="sensores">Sensores</h4>
-<h3 id="software-1">Software</h3>
+<h3 id="software">Software</h3>
 <h4 id="programación-en-arduino">Programación en arduino</h4>
 <h4 id="programación-en-python">Programación en python</h4>
 <h4 id="dashboard-web-con-angular">DashBoard web con angular</h4>
