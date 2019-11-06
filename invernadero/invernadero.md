@@ -622,21 +622,86 @@ Simulación en Tinkercad
 
 ### Maestro y Esclavo
 
+<center>
+<img src="./img/photos/IMG_20190903_140847.jpg"
+ style="width : 600px;"
+ class="img-fluid img-thumbnail"
+ />
+ <br><br>
+ Diseño de envió de información
+</center>
+<br>
+<br>
+
+<center>
+<img src="./img/photos/IMG_20190903_140854.jpg"
+ style="width : 600px;"
+ class="img-fluid img-thumbnail"
+ />
+ <br><br>
+Pruebas de comunicación
+</center>
+<br>
+<br>
+
+<center>
+<img src="./img/photos/IMG_20190903_140858.jpg"
+ style="width : 600px;"
+ class="img-fluid img-thumbnail"
+ />
+ <br><br>
+Pruebas de comunicación
+</center>
+<br>
+<br>
+
+<center>
+<img src="./img/photos/IMG_20191003_101809.jpg"
+ style="width : 600px;"
+ class="img-fluid img-thumbnail"
+ />
+ <br><br>
+Instalación en placa de soporte
+</center>
+<br>
+<br>
+
+<center>
+<img src="./img/photos/IMG_20190919_113157.jpg"
+ style="width : 600px;"
+ class="img-fluid img-thumbnail"
+ />
+ <br><br>
+Fabricando placa de soporte
+</center>
+<br>
+<br>
+
+<center>
+<img src="./img/photos/IMG_20191003_101719_rotada.jpg"
+ style="width : 600px;"
+ class="img-fluid img-thumbnail"
+ />
+ <br><br>
+Instalación en contenedor
+</center>
+<br>
+<br>
+
+<center>
+<img src="./img/photos/IMG_20191003_141738_rotada.jpg"
+ style="width : 600px;"
+ class="img-fluid img-thumbnail"
+ />
+ <br><br>
+Instalación Arduinos esclavos y maestro
+</center>
+<br>
+<br>
+
 ### RaspBerry PI maestro
 
 ### Instalando Sensores
-
-
-## Desarrollo del software
-
-### Programando Arduino
-
-### Programando Raspberry PI
-
-### DashBoard Local
-
-### DashBoard Remoto
-
 
 ## Ejecución de invernadero
 
