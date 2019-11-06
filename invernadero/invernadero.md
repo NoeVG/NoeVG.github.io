@@ -491,6 +491,7 @@ Datos de implementación:
 |Arduino 4|Esclavo|Enviar datos a maestro|Enviar cada con temperatura valor 88 | orden de maestro
 
 Código fuente maestro:
+
 ```
 #include <Wire.h>
 #define MESSAGE_LEN 32
@@ -552,6 +553,7 @@ String getValue(String data, char separator, int index)
   return found>index ? data.substring(strIndex[0], strIndex[1]) : "";
 }
 ```
+
 Código fuente esclavo 1 :
 ```
 #include <Wire.h>
@@ -605,12 +607,16 @@ void reciveEvent(int n) {
 }
 
 ```
+<center>
+
 Simulación en Tinkercad
 
-<video width="400" controls>
+<video width="600" controls>
   <source src="./videos/simulacioni2c.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
+</center>
+
 
 ## Instalación
 
