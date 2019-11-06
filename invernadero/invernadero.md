@@ -656,6 +656,17 @@ Pruebas de comunicación
 <br>
 
 <center>
+<img src="./img/photos/IMG_20190919_113157.jpg"
+ style="width : 600px;"
+ class="img-fluid img-thumbnail"
+ />
+ <br><br>
+Fabricando placa de soporte
+</center>
+<br>
+<br>
+
+<center>
 <img src="./img/photos/IMG_20191003_101809.jpg"
  style="width : 600px;"
  class="img-fluid img-thumbnail"
@@ -666,16 +677,6 @@ Instalación en placa de soporte
 <br>
 <br>
 
-<center>
-<img src="./img/photos/IMG_20190919_113157.jpg"
- style="width : 600px;"
- class="img-fluid img-thumbnail"
- />
- <br><br>
-Fabricando placa de soporte
-</center>
-<br>
-<br>
 
 <center>
 <img src="./img/photos/IMG_20191003_101719_rotada.jpg"
@@ -702,6 +703,138 @@ Instalación Arduinos esclavos y maestro
 ### RaspBerry PI maestro
 
 ### Instalando Sensores
+<center>
+<img src="./img/photos/IMG_20190903_083540-R.jpg"
+ style="width : 600px;"
+ class="img-fluid img-thumbnail"
+ />
+ <br><br>
+Preparar ambiente de prueba para sensores
+</center>
+<br>
+<br>
+
+<center>
+<img src="./img/photos/IMG_20190903_091944.jpg"
+ style="width : 600px;"
+ class="img-fluid img-thumbnail"
+ />
+ <br><br>
+Instalación de sensores en ambiente de prueba para sensores
+</center>
+<br>
+<br>
+
+<center>
+<img src="./img/photos/IMG_20190903_091948.jpg"
+ style="width : 600px;"
+ class="img-fluid img-thumbnail"
+ />
+ <br><br>
+ Instalación de sensores en ambiente de prueba para sensores
+</center>
+<br>
+<br>
+
+<center>
+<img src="./img/photos/IMG_20190903_091950.jpg"
+ style="width : 600px;"
+ class="img-fluid img-thumbnail"
+ />
+ <br><br>
+ Ejecución sensores en ambiente de prueba para sensores
+</center>
+<br>
+<br>
+
+<center>
+<img src="./img/photos/IMG_20190903_091957.jpg"
+ style="width : 600px;"
+ class="img-fluid img-thumbnail"
+ />
+ <br><br>
+ Ejecución sensores en ambiente de prueba para sensores
+</center>
+<br>
+<br>
+
+<center>
+<img src="./img/photos/IMG_20190912_110445-R.jpg"
+ style="width : 600px;"
+ class="img-fluid img-thumbnail"
+ />
+ <br><br>
+Observando parcela para instalación
+</center>
+<br>
+<br>
+
+<center>
+<img src="./img/photos/IMG_20190912_110338.jpg"
+ style="width : 600px;"
+ class="img-fluid img-thumbnail"
+ />
+ <br><br>
+Realizando mediciones de parcelas
+</center>
+<br>
+<br>
+
+<center>
+<img src="./img/photos/IMG_20190912_110433-R.jpg"
+ style="width : 600px;"
+ class="img-fluid img-thumbnail"
+ />
+ <br><br>
+Realizando mediciones de parcelas
+</center>
+<br>
+<br>
+
+<center>
+<img src="./img/photos/IMG_20190912_110443-R.jpg"
+ style="width : 600px;"
+ class="img-fluid img-thumbnail"
+ />
+ <br><br>
+Realizando mediciones de parcelas
+</center>
+<br>
+<br>
+
+<center>
+<img src="./img/photos/IMG_20190912_112141-R.jpg"
+ style="width : 600px;"
+ class="img-fluid img-thumbnail"
+ />
+ <br><br>
+Realizando pozos para sensores de tierra
+</center>
+<br>
+<br>
+
+<center>
+<img src="./img/photos/IMG_20190912_112340.jpg"
+ style="width : 600px;"
+ class="img-fluid img-thumbnail"
+ />
+ <br><br>
+Realizando cortes en cables comunicación
+</center>
+<br>
+<br>
+
+<center>
+<img src="./img/photos/IMG_20190912_113702.jpg"
+ style="width : 600px;"
+ class="img-fluid img-thumbnail"
+ />
+ <br><br>
+Soldando sensores
+</center>
+<br>
+<br>
+
 
 ## Ejecución de invernadero
 
