@@ -312,12 +312,206 @@ Diagrama de flujo de datos para arduino maestro
  class="img-fluid img-thumbnail"
  /> <br><br> Diagrama de flujo para Arduino Maestro.
 </center>
+<br> <br>
+<center>
+<img src="./img/photos/diagramaSlaveArduino.png "
+ style="width : 500px;"
+ class="img-fluid img-thumbnail"
+ /> <br><br> Diagrama de flujo para Arduino Esclavo.
+</center>
 <p><br> <br></p>
 <h3 id="programación-en-python">Programación en Python</h3>
+<center>
+<img src="./img/photos/diagramaGeneralRasp.png "
+ style="width : 500px;"
+ class="img-fluid img-thumbnail"
+ /> <br><br> Diagrama de flujo para RaspBerry PI.
+</center>
+<p><br> <br></p>
 <h3 id="dashboard-web-con-angular-8">DashBoard web con Angular 8</h3>
+<center>
+<img src="./img/photos/diagramaDashboardAngular.png "
+ style="width : 600px;"
+ class="img-fluid img-thumbnail"
+ /> <br><br> DashBoard online Angular
+</center>
+<p><br> <br></p>
 <h3 id="dashboard-local-con-python">DashBoard local con Python</h3>
+<center>
+<img src="./img/photos/diagramaDashboardPython.png "
+ style="width : 600px;"
+ class="img-fluid img-thumbnail"
+ /> <br><br> DashBoard local Python QT
+</center>
+<p><br> <br></p>
 <h2 id="trabajando-con-sensores">Trabajando con sensores</h2>
 <h3 id="simulación">Simulación</h3>
+<p>La comunicación entre los arduino es mediante el protocolo i2c, este protocolo permite una comunicación bidireccional, permitiendo enviar y obtener datos desde el arduino maestro.</p>
+<p>Por ello se presenta el codigo fuente sobre la implementación de i2c en arduino con 1 arduino maestro y 3 arduinos esclavos, esto con la finalidad de simular la parte fundamental de la comunicación entre los arduinos.</p>
+<p>Datos de implementación:</p>
+<table>
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 19%" />
+<col style="width: 26%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Arduino</th>
+<th style="text-align: center;">Rol</th>
+<th style="text-align: center;">Función</th>
+<th style="text-align: center;">Datos enviar</th>
+<th style="text-align: center;">Datos recibir</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Arduino 1</td>
+<td style="text-align: center;">Maestro</td>
+<td style="text-align: center;">Controlar esclavos</td>
+<td style="text-align: center;">Enviar a cada esclavo el codigo 1</td>
+<td style="text-align: center;">Recibe de cada esclavo el valor de temperatura</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Arduino 2</td>
+<td style="text-align: center;">Esclavo</td>
+<td style="text-align: center;">Enviar datos a maestro</td>
+<td style="text-align: center;">Enviar cada con temperatura valor 66</td>
+<td style="text-align: center;">orden de maestro</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Arduino 3</td>
+<td style="text-align: center;">Esclavo</td>
+<td style="text-align: center;">Enviar datos a maestro</td>
+<td style="text-align: center;">Enviar cada con temperatura valor 77</td>
+<td style="text-align: center;">orden de maestro</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Arduino 4</td>
+<td style="text-align: center;">Esclavo</td>
+<td style="text-align: center;">Enviar datos a maestro</td>
+<td style="text-align: center;">Enviar cada con temperatura valor 88</td>
+<td style="text-align: center;">orden de maestro</td>
+</tr>
+</tbody>
+</table>
+<p>Código fuente maestro:</p>
+<pre><code>#include &lt;Wire.h&gt;
+#define MESSAGE_LEN 32
+#define ARDUINOS 3
+
+void setup()
+{
+    Serial.begin(9600);  // Velocidad de conexión
+}
+
+void loop()
+{
+  //obtener informaciòn de todos.
+  Wire.begin();        // Conexión al Bus I2C
+
+  for(int i = 8; i &lt;(8+ARDUINOS);i++){
+    Serial.println(&quot;Working...&quot;);
+
+    sendInformationSlave(i,1);
+    delay(5000);
+    getInformationSlave(i);           
+  }
+}
+void getInformationSlave(int slave){
+  Wire.requestFrom(slave, MESSAGE_LEN);    // Le pide 17 bytes al Esclavo 1
+  int x = 0;
+  char c[MESSAGE_LEN];
+  while(Wire.available())    // slave may send less than requested
+  {
+    c[x++] = Wire.read();   // Recibe byte a byte
+  }
+  Serial.println(&quot;info&quot;);
+  Serial.println(c);       // Cámbia de línea en el Serial Monitor.
+}
+// Esto es lo que envía cuando le hace la petición.
+void sendInformationSlave(int slave,int code)
+{
+  Wire.beginTransmission(slave);
+  Wire.write(code);
+  Wire.endTransmission();
+ //delay(5000);
+}
+
+// https://stackoverflow.com/questions/9072320/split-string-into-string-array
+String getValue(String data, char separator, int index)
+{
+  int found = 0;
+  int strIndex[] = {0, -1};
+  int maxIndex = data.length()-1;
+
+  for(int i=0; i&lt;=maxIndex &amp;&amp; found&lt;=index; i++){
+    if(data.charAt(i)==separator || i==maxIndex){
+        found++;
+        strIndex[0] = strIndex[1]+1;
+        strIndex[1] = (i == maxIndex) ? i+1 : i;
+    }
+  }
+
+  return found&gt;index ? data.substring(strIndex[0], strIndex[1]) : &quot;&quot;;
+}</code></pre>
+<p>Código fuente esclavo 1 :</p>
+<pre><code>#include &lt;Wire.h&gt;
+#define ID 8 // cambia para cada arduino
+#define MESSAGE_LEN 32
+
+char cadena[MESSAGE_LEN];
+
+void setup() {
+  Wire.begin(ID);      // join i2c bus (address optional for master)
+  Serial.begin(9600);  // start serial for output
+}
+
+void loop() {  
+  Serial.println(&quot;Get data from master&quot;);
+  Wire.onReceive(reciveEvent);
+  delay(1000);
+  Wire.onRequest(enviarDatos);
+  Serial.println(&quot;Finish send data&quot;);
+}
+
+void enviarDatos(void) {
+  Wire.write(cadena);
+}
+
+void reciveEvent(int n) {
+  String response;
+  int x = Wire.read();
+
+  switch (x) {
+    case 1:
+
+      //humedad
+      Serial.print(&quot;Enviar Humedad Ambiente:&quot;);
+      response = String(&quot;DatoHA,&quot;);
+      response.concat(&quot;A_&quot;);
+      response.concat(ID);
+      response.concat(&quot;,&quot;);
+      response.concat(66);
+      response.concat(&quot;,&quot;);
+      response.concat(66);
+      response.concat(&quot;,&quot;);
+      response.concat(66);
+      response.concat(&quot;,&quot;);
+      response.toCharArray(cadena, MESSAGE_LEN);
+      Serial.println(cadena);
+      break;
+  }
+  delay(5000);
+  Serial.println(&quot;Finish recolected data from sensor&quot;);
+}
+</code></pre>
+<p>Simulación en tinkercad</p>
+<video width="400" controls>
+<source src="./videos/simulacioni2c.mp4" type="video/mp4">
+<p>Your browser does not support HTML5 video. </video></p>
 <h2 id="instalación">Instalación</h2>
 <h3 id="maestro-y-esclavo">Maestro y Esclavo</h3>
 <h3 id="raspberry-pi-maestro">RaspBerry PI maestro</h3>

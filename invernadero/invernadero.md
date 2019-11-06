@@ -426,19 +426,191 @@ Diagrama de flujo de datos para arduino maestro
 </center>
 <br>
 <br>
-
+<center>
+<img src="./img/photos/diagramaSlaveArduino.png "
+ style="width : 500px;"
+ class="img-fluid img-thumbnail"
+ />
+ <br><br>
+ Diagrama de flujo para Arduino Esclavo.
+</center>
+<br>
+<br>
 
 ### Programación en Python
+<center>
+<img src="./img/photos/diagramaGeneralRasp.png "
+ style="width : 500px;"
+ class="img-fluid img-thumbnail"
+ />
+ <br><br>
+ Diagrama de flujo para RaspBerry PI.
+</center>
+<br>
+<br>
 
 ### DashBoard web con Angular 8
+<center>
+<img src="./img/photos/diagramaDashboardAngular.png "
+ style="width : 600px;"
+ class="img-fluid img-thumbnail"
+ />
+ <br><br>
+DashBoard online Angular
+</center>
+<br>
+<br>
 
 ### DashBoard local con Python
-
+<center>
+<img src="./img/photos/diagramaDashboardPython.png "
+ style="width : 600px;"
+ class="img-fluid img-thumbnail"
+ />
+ <br><br>
+DashBoard local Python QT
+</center>
+<br>
+<br>
 
 ## Trabajando con sensores
 
 ### Simulación
 
+La comunicación entre los arduino es mediante el protocolo i2c, este protocolo permite una comunicación bidireccional, permitiendo enviar y obtener datos desde el arduino maestro.
+
+Por ello se presenta el codigo fuente sobre la implementación de i2c en arduino con 1 arduino maestro y 3 arduinos esclavos, esto con la finalidad de simular la parte fundamental de la comunicación entre los arduinos.
+
+Datos de implementación:
+
+|Arduino |Rol | Función |Datos enviar |Datos recibir |
+|:----------:|:--------:|:------------:|:------:|:------:|
+|Arduino 1 |Maestro|Controlar esclavos|Enviar a cada esclavo el codigo 1| Recibe de cada esclavo el valor de temperatura
+|Arduino 2|Esclavo|Enviar datos a maestro|Enviar cada con temperatura valor 66 | orden de maestro
+|Arduino 3|Esclavo|Enviar datos a maestro|Enviar cada con temperatura valor 77 | orden de maestro
+|Arduino 4|Esclavo|Enviar datos a maestro|Enviar cada con temperatura valor 88 | orden de maestro
+
+Código fuente maestro:
+```
+#include <Wire.h>
+#define MESSAGE_LEN 32
+#define ARDUINOS 3
+
+void setup()
+{
+	Serial.begin(9600);  // Velocidad de conexión
+}
+
+void loop()
+{
+  //obtener informaciòn de todos.
+  Wire.begin();        // Conexión al Bus I2C
+
+  for(int i = 8; i <(8+ARDUINOS);i++){
+    Serial.println("Working...");
+
+    sendInformationSlave(i,1);
+    delay(5000);
+    getInformationSlave(i);           
+  }
+}
+void getInformationSlave(int slave){
+  Wire.requestFrom(slave, MESSAGE_LEN);    // Le pide 17 bytes al Esclavo 1
+  int x = 0;
+  char c[MESSAGE_LEN];
+  while(Wire.available())    // slave may send less than requested
+  {
+    c[x++] = Wire.read();   // Recibe byte a byte
+  }
+  Serial.println("info");
+  Serial.println(c);       // Cámbia de línea en el Serial Monitor.
+}
+// Esto es lo que envía cuando le hace la petición.
+void sendInformationSlave(int slave,int code)
+{
+  Wire.beginTransmission(slave);
+  Wire.write(code);
+  Wire.endTransmission();
+ //delay(5000);
+}
+
+// https://stackoverflow.com/questions/9072320/split-string-into-string-array
+String getValue(String data, char separator, int index)
+{
+  int found = 0;
+  int strIndex[] = {0, -1};
+  int maxIndex = data.length()-1;
+
+  for(int i=0; i<=maxIndex && found<=index; i++){
+    if(data.charAt(i)==separator || i==maxIndex){
+        found++;
+        strIndex[0] = strIndex[1]+1;
+        strIndex[1] = (i == maxIndex) ? i+1 : i;
+    }
+  }
+
+  return found>index ? data.substring(strIndex[0], strIndex[1]) : "";
+}
+```
+Código fuente esclavo 1 :
+```
+#include <Wire.h>
+#define ID 8 // cambia para cada arduino
+#define MESSAGE_LEN 32
+
+char cadena[MESSAGE_LEN];
+
+void setup() {
+  Wire.begin(ID);      // join i2c bus (address optional for master)
+  Serial.begin(9600);  // start serial for output
+}
+
+void loop() {  
+  Serial.println("Get data from master");
+  Wire.onReceive(reciveEvent);
+  delay(1000);
+  Wire.onRequest(enviarDatos);
+  Serial.println("Finish send data");
+}
+
+void enviarDatos(void) {
+  Wire.write(cadena);
+}
+
+void reciveEvent(int n) {
+  String response;
+  int x = Wire.read();
+
+  switch (x) {
+    case 1:
+
+      //humedad
+      Serial.print("Enviar Humedad Ambiente:");
+      response = String("DatoHA,");
+      response.concat("A_");
+      response.concat(ID);
+      response.concat(",");
+      response.concat(66);
+      response.concat(",");
+      response.concat(66);
+      response.concat(",");
+      response.concat(66);
+      response.concat(",");
+      response.toCharArray(cadena, MESSAGE_LEN);
+      Serial.println(cadena);
+      break;
+  }
+  delay(5000);
+  Serial.println("Finish recolected data from sensor");
+}
+
+```
+Simulación en Tinkercad
+
+<video width="400" controls>
+  <source src="./videos/simulacioni2c.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
 
 ## Instalación
 
