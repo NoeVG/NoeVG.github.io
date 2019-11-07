@@ -702,6 +702,10 @@ Instalación Arduinos esclavos y maestro
 
 ### RaspBerry PI maestro
 
+### Descargando imagen Fedora para RaspBerry PI
+
+
+
 ### Instalando Sensores
 <center>
 <img src="./img/photos/IMG_20190903_083540-R.jpg"
