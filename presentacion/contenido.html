@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./bootstrap-4.4.1-dist/css/bootstrap.min.css">
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <!--<script src="./bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>-->
+    <script src="./bootstrap-4.4.1-dist/js/bootstrap.js"></script>
+
+    <title>Metodologia RUP</title>
+  </head>
+  <style>
+    .posGeneral {
+      position: absolute;
+      top: 25%;
+    }
+  </style>
+  <body>
+    <div class="container ">
+
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div class=" carousel-inner">
+          <!--Carmen-->
+          <div class="carousel-item active">
+            <div id="temaA_1">
+              <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                <div class="display-4" > Metodología RUP <div class="text-right"><img src="./images/carmen.png" style="width:90px;height:90px;"></div> </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="list-group" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action active" id="list-historia-list" data-toggle="list" href="#list-historia" role="tab" aria-controls="historia">Historia</a>
+                        <a class="list-group-item list-group-item-action" id="list-anos-list" data-toggle="list" href="#list-anos" role="tab" aria-controls="anos">Años</a>
+                        <a class="list-group-item list-group-item-action" id="list-actualidad-list" data-toggle="list" href="#list-actualidad" role="tab" aria-controls="actualidad">Proceso</a>
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active text-justify" id="list-historia" role="tabpanel" aria-labelledby="list-historia-list ">
+                          <h3 class="">
+                          El antecedente más importante se ubica en 1967 con la Metodología Ericsson (Ericsson Approach) elaborada por Ivar Jacobson, una aproximación de desarrollo basada en componentes, que introdujo el concepto de Caso de Uso.
+                        </h3>
+                        </div>
+
+                        <div class="tab-pane fade text-justify" id="list-anos" role="tabpanel" aria-labelledby="list-anos-list">
+                          <h3>
+                          Entre los años de 1987 a 1995 Jacobson fundó la compañía Objectory AB y lanza el proceso de desarrollo Objectory (abreviación de Object Factory).
+                          <br> <br>Posteriormente en 1995 Rational Software Corporation adquiere Objectory AB y entre 1995 y 1997 se desarrolla Rational Objectory Process (ROP) a partir de Objectory 3.8 y del Enfoque Rational (Rational Approach) adoptando UML como lenguaje de modelado.
+                          </h3>
+                        </div>
+
+                        <div class="tab-pane fade text-justify" id="list-actualidad" role="tabpanel" aria-labelledby="list-actualidad-list">
+                          <h3>
+                          Desde ese entonces y a la cabeza de Grady Booch, Ivar Jacobson y James Rumbaugh, Rational Software desarrolló e incorporó diversos elementos para expandir ROP, destacándose especialmente el flujo de trabajo conocido como modelado del negocio.
+
+                          <br> <br>En junio del 1998 se lanza Rational Unified Process.
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Carmen-->
+          <div class="carousel-item">
+            <div id="temaA_1">
+              <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                <!--<h3 class="display-4">Caracterı́sticas de la Metodologı́a</h3>-->
+                <div class="display-4" >Caracterı́sticas de la Metodologı́a <div class="text-right"><img src="./images/carmen.png" style="width:90px;height:90px;"></div> </div>
+
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="list-group" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action active" id="list-2A-list" data-toggle="list" href="#list-2A" role="tab" aria-controls="2A">1. Proceso dirigido por Casos de Uso</a>
+                        <a class="list-group-item list-group-item-action" id="list-2A1-list" data-toggle="list" href="#list-2A1" role="tab" aria-controls="2A1">1.1 Proceso dirigido por Casos de Uso</a>
+
+                        <a class="list-group-item list-group-item-action" id="list-2B-list" data-toggle="list" href="#list-2B" role="tab" aria-controls="2B">2. Proceso centrado en la arquitectura</a>
+                        <a class="list-group-item list-group-item-action" id="list-2B1-list" data-toggle="list" href="#list-2B1" role="tab" aria-controls="2B1">2.1 Proceso centrado en la arquitectura</a>
+                        <a class="list-group-item list-group-item-action" id="list-2B2-list" data-toggle="list" href="#list-2B2" role="tab" aria-controls="2B2">2.2 Proceso centrado en la arquitectura</a>
+                        <a class="list-group-item list-group-item-action" id="list-2B3-list" data-toggle="list" href="#list-2B3" role="tab" aria-controls="2B3">2.3 Proceso centrado en la arquitectura</a>
+
+                        <a class="list-group-item list-group-item-action" id="list-2C-list" data-toggle="list" href="#list-2C" role="tab" aria-controls="2C">3.Proceso Iterativo e Incremental</a>
+                        <a class="list-group-item list-group-item-action" id="list-2C1-list" data-toggle="list" href="#list-2C1" role="tab" aria-controls="2C1">3.1Proceso Iterativo e Incremental</a>
+
+
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active text-justify" id="list-2A" role="tabpanel" aria-labelledby="list-2A-list ">
+                        <h3>
+                          Según Kruchten, P. (2000), los caso de Uso son una técnica de captura de requisitos que fuerza a pensar en términos de importancia para el usuario y no solo en términos de funciones que sería bueno contemplar.
+                        </h3>
+                        </div>
+                        <div class="tab-pane fade show text-justify" id="list-2A1" role="tabpanel" aria-labelledby="list-2A1-list ">
+                        <h3>
+                          Caso de Uso es un fragmento de funcionalidad del sistema que proporciona al usuario un valor añadido. Los Casos de Uso representan los requisitos funcionales del sistema.<br><br>
+                          En RUP los Casos de Uso no son solo una herramienta para especificar los requisitos del sistema. También guían su diseño, implementación y prueba. Los Casos de Uso constituyen un elemento Integrador y una guía del trabajo.
+                        </h3>
+                        </div>
+                        <div class="tab-pane fade text-justify" id="list-2B" role="tabpanel" aria-labelledby="list-2B-list">
+                          <h3>
+                            La arquitectura involucra los aspectos estáticos y dinámicos más significativos del sistema, esta relacionada con la toma de decisiones que indican como tiene que ser construido el sistema y ayuda a determinar en qué orden.
+                          </h3>
+                        </div>
+                        <div class="tab-pane fade text-justify" id="list-2B1" role="tabpanel" aria-labelledby="list-2B1-list">
+                          <h3>
+                            Los elementos de la arquitectura se deben considerar elementos de calidad del sistema, como rendimiento, reutilización y capacidad de evolución por lo que debe ser flexible durante todo el proceso de desarrollo.
+                            <br> <br> La arquitectura se ve influenciada por la plataforma software, sistema operativo, gestor de bases de datos, protocolos, consideraciones de desarrollo como sistemas heredados.
+                          </h3>
+                        </div>
+                        <div class="tab-pane fade text-justify" id="list-2B2" role="tabpanel" aria-labelledby="list-2B2-list">
+                          <h3>
+                            En RUP además del uso de Caso de Uso para guiar el proceso se presta atención importante al establecimiento temprano de una buena arquitectura que no se vea fuertemente impactada ante cambios posteriores durante la construcción y el mantenimiento.
+                          </h3>
+                        </div>
+                        <div class="tab-pane fade text-justify" id="list-2B3" role="tabpanel" aria-labelledby="list-2B3-list">
+                          <h3>
+                            Cada producto tiene una función y una forma. La función corresponde a la funcionalidad reflejada en los Casos de Uso y la forma la proporciona la arquitectura.
+                          </h3>
+                          <center>
+                            <img src="./images/2B3.png" style="width:450px;height:250px;">
+                          </center>
+                        </div>
+                        <div class="tab-pane fade text-justify" id="list-2C" role="tabpanel" aria-labelledby="list-2C-list">
+                          <h3>
+                            En RUP se propone una estrategia que es el proceso iterativo e incremental en donde el trabajo se divide en partes más pequeñas o mini proyectos.
+                            <br>
+                            <br>
+                            Permitiendo que el equilibrio entre Casos de Uso y arquitectura se vaya logrando durante cada mini proyecto, así durante todo el proceso de desarrollo.
+                          </h3>
+                        </div>
+                        <div class="tab-pane fade text-justify" id="list-2C1" role="tabpanel" aria-labelledby="list-2C1-list">
+                          <h3>
+                             Cada mini proyecto se puede ver como una iteración del cual se obtiene un incremento que produce un crecimiento en el producto. Una iteración puede realizarse por medio de una cascada.
+                          </h3>
+                          <center>
+                            <img src="./images/2C1.png" style="width:450px;height:250px;">
+                          </center>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Noe-->
+          <div class="carousel-item">
+            <div id="temaA_1">
+              <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                <div class="display-4" >Mejoras practicas para el desarrollo de software <div class="text-right"><img src="./images/noe.jpg" style="width:90px;height:90px;"></div> </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="list-group" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action active" id="list-3A-list" data-toggle="list" href="#list-3A" role="tab" aria-controls="3A">Gestion de Requisitos</a>
+                        <a class="list-group-item list-group-item-action" id="list-3B-list" data-toggle="list" href="#list-3B" role="tab" aria-controls="3B">Desarrollo de software iterativo</a>
+                        <a class="list-group-item list-group-item-action" id="list-3C-list" data-toggle="list" href="#list-3C" role="tab" aria-controls="3C">La arquitectura basada en componentes</a>
+                        <a class="list-group-item list-group-item-action" id="list-3D-list" data-toggle="list" href="#list-3D" role="tab" aria-controls="3D">Modelo Visual (usando UML)</a>
+                        <a class="list-group-item list-group-item-action" id="list-3E-list" data-toggle="list" href="#list-3E" role="tab" aria-controls="3E">Verificación continua de la calidad</a>
+                        <a class="list-group-item list-group-item-action" id="list-3F-list" data-toggle="list" href="#list-3F" role="tab" aria-controls="3F">Gestión de los cambios</a>
+
+
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active text-justify" id="list-3A" role="tabpanel" aria-labelledby="list-3A-list ">
+                        <h3>
+                          RUP brinda una guía para encontrar, organizar, documentar, y seguir los cambios de los requisitosfuncionales y restricciones. Utiliza una notación de Caso de Uso y escenarios para representar losrequisitos.
+                        </h3>
+                        </div>
+                        <div class="tab-pane fade show  text-justify" id="list-3B" role="tabpanel" aria-labelledby="list-3B-list ">
+                        <h3>
+                          Desarrollo del producto mediante iteraciones con hitos bien definidos, en las cuales se repiten lasactividades pero con distinto énfasis, según la fase del proyecto
+                        </h3>
+                        </div>
+                        <div class="tab-pane fade show  text-justify" id="list-3C" role="tabpanel" aria-labelledby="list-3C-list ">
+                        <h3>
+                          La creación de sistemas intensivos en software requiere dividir el sistema en componentes coninterfaces  bien definidas, que posteriormente serán ensamblados para generar el sistema. <BR><BR>Estacaracterística en un proceso de desarrollo permite que el sistema se vaya creando a medida que seobtienen o se desarrollan sus componentes
+                        </h3>
+                        </div>
+                        <div class="tab-pane fade show  text-justify" id="list-3D" role="tabpanel" aria-labelledby="list-3D-list ">
+                        <h3>
+                          UML es un lenguaje para visualizar, especificar, construir y documentar el software. Utilizarherramientas de modelado visual facilita la gestión de dichos modelos, permitiendo ocultar oexponer detalles cuando sea necesario. <BR><BR>El modelado visual también ayuda a mantener laconsistencia. En resumen, el modelado visual ayuda a mejorar la capacidad del equipo paragestionar la complejidad del software
+                        </h3>
+                        </div>
+                        <div class="tab-pane fade show  text-justify" id="list-3E" role="tabpanel" aria-labelledby="list-3E-list ">
+                        <h3>
+                          es importante que la calidad se evalúe en varios puntos durante el proceso de desarrollo,especialmente al final de cada iteración. En esta verificación las pruebas juegan un papelfundamental y se integran a lo largo de todo el proceso
+                        </h3>
+                        </div>
+                        <div class="tab-pane fade show  text-justify" id="list-3F" role="tabpanel" aria-labelledby="list-3F-list ">
+                        <h3>
+                          El cambio es un factor de riesgo crítico en los proyectos de software. El software cambia no sólodebido a acciones de mantenimiento posteriores a la entrega del producto, sino que durante elproceso de desarrollo, especialmente importantes por su posible impacto son los cambios en losrequisitos. 
+                        </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Vivani-->
+          <div class="carousel-item">
+            <div id="temaA_1">
+              <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                <div class="display-4" >Estructura Dinamica <div class="text-right"> <img src="./images/vivani.png" style="width:90px;height:90px;"> </div> </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="list-group" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action active" id="list-4A-list" data-toggle="list" href="#list-4A" role="tab" aria-controls="4A">Estructura Dinamica</a>
+                        <a class="list-group-item list-group-item-action" id="list-4B-list" data-toggle="list" href="#list-4B" role="tab" aria-controls="4B">Fase de inicio</a>
+                        <a class="list-group-item list-group-item-action" id="list-4C-list" data-toggle="list" href="#list-4C" role="tab" aria-controls="4C">Documento de visión del sistem</a>
+                        <a class="list-group-item list-group-item-action" id="list-4D-list" data-toggle="list" href="#list-4D" role="tab" aria-controls="4D">Documento de requerimientos</a>
+                        <a class="list-group-item list-group-item-action" id="list-4E-list" data-toggle="list" href="#list-4E" role="tab" aria-controls="4E">Modelo de negocio</a>
+                        <a class="list-group-item list-group-item-action" id="list-4H-list" data-toggle="list" href="#list-4H" role="tab" aria-controls="4H">Glosario</a>
+                        <a class="list-group-item list-group-item-action" id="list-4I-list" data-toggle="list" href="#list-4I" role="tab" aria-controls="4I">Fase de elaboracion</a>
+                        <a class="list-group-item list-group-item-action" id="list-4J-list" data-toggle="list" href="#list-4J" role="tab" aria-controls="4J">Casos de uso</a>
+                        <a class="list-group-item list-group-item-action" id="list-4K-list" data-toggle="list" href="#list-4K" role="tab" aria-controls="4K">Documento de Arquitectura</a>
+                        <a class="list-group-item list-group-item-action" id="list-4L-list" data-toggle="list" href="#list-4L" role="tab" aria-controls="4L">Plan de desarrollo</a>
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active text-justify" id="list-2A" role="tabpanel" aria-labelledby="list-historia-list ">
+                        <h3>
+                          RUP se repite a lo largo de una serie de ciclos que constituyen la vida de un producto.
+                            <ol>
+                            <li> Cada ciclo concluye con una generación del producto para los clientes </li>
+                            <li> Cada ciclo consta de cuatro fases: Inicio, Elaboración, Construcción y Transición </li>
+                            </ol>
+                            <div class="text-center"> <img src="./images/4A.png" style="width:150px;height:150px;">  </div>
+                        </h3>
+                        </div>
+                        <div class="tab-pane fade show  text-justify" id="list-4B" role="tabpanel" aria-labelledby="list-4B-list ">
+                        <h3>
+                          <OL>
+                          <li>Durante la fase de inicio se define el modelo del negocio y el alcance del proyecto.</li>
+                          <li>Se identifican todos los actores y Casos de Uso. </li>
+                          <li>Se desarrolla un plan de negocio que determina los recursos que deben ser asignados al proyecto.</li>
+                          <li>Resultados: Documentacion de vision y requerimientos, modelo de negocio, glosario</li>
+                        </OL>
+                        </h3>
+                        </div>
+                        <div class="tab-pane fade show  text-justify" id="list-4C" role="tabpanel" aria-labelledby="list-4C-list ">
+                        <h3>
+                          <ol>
+                          <li>Identifica las expectativas y requerimientos generales de los usuarios del sistema a desarrollar </li>
+                          <li>Determinar las fronteras del sistema, la identificación de prioridades y dependencias entre funcionalidades</li>
+                          </ol>
+                        </h3>
+                        </div>
+                        <div class="tab-pane fade show  text-justify" id="list-4D" role="tabpanel" aria-labelledby="list-4D-list ">
+                        <h3>
+                          <ol>
+                            <li>Establece y mantiene un acuerdo con los usuarios e involucrados sobre qué es lo que deberá hacer el sistema a desarrollar.</li>
+                          </ol>
+                        </h3>
+                        </div>
+                        <div class="tab-pane fade show  text-justify" id="list-4E" role="tabpanel" aria-labelledby="list-4E-list ">
+                        <h3>
+                          <ol>
+                            <li>Proporciona una vista global de los procesos de negocio involucrados para el desarrollo del sistema mediante la representación gráfica que muestre el comportamiento de la organización</li>
+                            <li>Presentar las Áreas de Negocio involucradas y sus diferentes escenarios</li>
+                          </ol>
+                        </h3>
+                        </div>
+                        <div class="tab-pane fade show  text-justify" id="list-4H" role="tabpanel" aria-labelledby="list-4H-list ">
+                        <h3>
+                          Proporciona la definición de los principales términos, acrónimos y abreviaturas utilizados en el sistema.
+                        </h3>
+                        </div>
+                        <div class="tab-pane fade show  text-justify" id="list-4I" role="tabpanel" aria-labelledby="list-4I-list ">
+                        <h3>
+                          <ol>
+                            <li>Analiza el dominio del problema</li>
+                            <li>Establece los cimientos de la arquitectura</li>
+                            <li>Desarrolla el plan del proyecto</li>
+                            <li>Se construye un prototipo de la arquitectura, el cual debe evolucionar en iteraciones sucesivas hasta el sistema final</li>
+                          </ol>
+                        </h3>
+                        </div>
+                        <div class="tab-pane fade show  text-justify" id="list-4J" role="tabpanel" aria-labelledby="list-4J-list ">
+                        <h3>
+                          <ol>
+                            <li>Indica los flujos básicos y alternos de las funcionalidades.</li>
+                            <li>Validaciones y reglas de negocio a implementar.</li>
+                          </ol>
+                        </h3>
+                        </div>
+                        <div class="tab-pane fade show  text-justify" id="list-4K" role="tabpanel" aria-labelledby="list-4K-list ">
+                        <h3>
+                          <ol>
+                            <li>Proporciona una visión general del sistema, utilizando varias vistas de arquitectura para describir diferentes aspectos del sistema</li>
+                            <li>Una de las primeras vistas a ser consideradas es la vista de casos de uso ya que estos dirigirán el resto del proyecto</li>
+                          </ol>
+                        </h3>
+                        </div>
+                        <div class="tab-pane fade show  text-justify" id="list-4L" role="tabpanel" aria-labelledby="list-4L-list ">
+                        <h3>
+                          <ol>
+                            <li>Proporciona la información necesaria para controlar el proyecto.</li>
+                            <li>Se describe el enfoque de desarrollo.</li>
+                          </ol>
+                        </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Vivani-->
+          <div class="carousel-item">
+            <div id="temaA_1">
+              <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                <div class="display-4" >Estructura Dinamica <div class="text-right"> <img src="./images/vivani.png" style="width:90px;height:90px;"> </div> </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="list-group" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action active" id="list-5A-list" data-toggle="list" href="#list-5A" role="tab" aria-controls="5A">Fase de construccióno</a>
+                        <a class="list-group-item list-group-item-action " id="list-5B-list" data-toggle="list" href="#list-5B" role="tab" aria-controls="5B">Fase de trancisión</a>
+                        <a class="list-group-item list-group-item-action " id="list-5C-list" data-toggle="list" href="#list-5C" role="tab" aria-controls="5C">Documentación de despliegue</a>
+
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active text-justify" id="list-5A" role="tabpanel" aria-labelledby="list-5A-list ">
+                        <h3>
+                        <ol>
+                          <li>La finalidad principal de esta fase es alcanzar la capacidad operacional del producto.</li>
+                          <li>Durante esta fase todos los componentes, características y requisitos deben ser implementados, integrados y probados en su totalidad, obteniendo una versión aceptable del producto.</li>
+                        </ol>
+                        </h3>
+                        </div>
+                        <div class="tab-pane fade show  text-justify" id="list-5B" role="tabpanel" aria-labelledby="list-5B-list ">
+                        <h3>
+                          <ol>
+                            <li>La finalidad de la fase de transición es poner el producto en manos de los usuarios finales</li>
+                            <li>Completar la documentación</li>
+                            <li>Entrenar al usuario en el manejo del producto, configuración, instalación y facilidad de uso del producto</li>
+                          </ol>
+                        </h3>
+                        </div>
+                        <div class="tab-pane fade show  text-justify" id="list-5C" role="tabpanel" aria-labelledby="list-5C-list ">
+                        <h3>
+                          <ol>
+                            <li>Describe las actividades necesarias para instalar y probar el producto</li>
+                            <li>Plan de pruebas</li>
+                            <li>Define las actividades de pruebas a cubrir</li>
+                            <li>Establece el tipo de pruebas</li>
+                            <li>Establece los requerimientos a proba</li>
+                            <li>Determina la estrategia de prueba y los recursos requeridos para llevarlas a cabo</li>
+                          </ol>
+                        </h3>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Raul & Mauricio-->
+          <div class="carousel-item">
+            <div id="temaA_1">
+              <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                <div class="display-4" >Estructura Estática <div class="text-right"> <img src="./images/raul.png" style="width:90px;height:90px;"> <img src="./images/mauricio.png" style="width:90px;height:90px;"></div> </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="list-group" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action active" id="list-6A-list" data-toggle="list" href="#list-6A" role="tab" aria-controls="6A">Estructura Estática</a>
+                        <a class="list-group-item list-group-item-action " id="list-6B-list" data-toggle="list" href="#list-6B" role="tab" aria-controls="6B">Roles</a>
+                        <a class="list-group-item list-group-item-action " id="list-6C-list" data-toggle="list" href="#list-6C" role="tab" aria-controls="6C">Actividades</a>
+                        <a class="list-group-item list-group-item-action " id="list-6D-list" data-toggle="list" href="#list-6D" role="tab" aria-controls="6D">Artefactos</a>
+                        <a class="list-group-item list-group-item-action " id="list-6E-list" data-toggle="list" href="#list-6E" role="tab" aria-controls="6E">Flujos de trabajo</a>
+                        <a class="list-group-item list-group-item-action " id="list-6F-list" data-toggle="list" href="#list-6F" role="tab" aria-controls="6F">Modelado del negocio</a>
+                        <a class="list-group-item list-group-item-action " id="list-6G-list" data-toggle="list" href="#list-6G" role="tab" aria-controls="6G">Requisitos</a>
+                        <a class="list-group-item list-group-item-action " id="list-6H-list" data-toggle="list" href="#list-6H" role="tab" aria-controls="6H"> Análisis y Diseño</a>
+                        <a class="list-group-item list-group-item-action " id="list-6I-list" data-toggle="list" href="#list-6I" role="tab" aria-controls="6I"> Implementación</a>
+                        <a class="list-group-item list-group-item-action " id="list-6J-list" data-toggle="list" href="#list-6J" role="tab" aria-controls="6J"> Pruebas</a>
+                        <a class="list-group-item list-group-item-action " id="list-6K-list" data-toggle="list" href="#list-6K" role="tab" aria-controls="6K"> Referencias</a>
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active text-justify" id="list-6A" role="tabpanel" aria-labelledby="list-6A-list ">
+                        <h3>
+                          Establece las actividades específicas de cada uno de los integrantes del equipo de desarrollo, así como la forma de realizar estas actividades.
+                          RUP define cuatro elementos en la estructura estática
+                          <ol>
+                            <li>Roles</li>
+                            <li>Actividades</li>
+                            <li>Flujo de trabajo</li>
+                          </ol>
+                        </h3>
+                        </div>
+                        <div class="tab-pane fade show  text-justify" id="list-6B" role="tabpanel" aria-labelledby="list-6B-list ">
+                        <h3>
+                            Un rol define el comportamiento y responsabilidades de un individuo, o de un grupo de individuos trabajando en equipo.
+                          <ol>
+                            <li>Analistas</li>
+                            <li>Desarrolladores</li>
+                            <li>Gestores</li>
+                            <li>Apoyo</li>
+                            <li>Especialistas en pruebas </li>
+                          </ol>
+                        </h3>
+                        </div>
+                        <div class="tab-pane fade show  text-justify" id="list-6C" role="tabpanel" aria-labelledby="list-6C-list ">
+                        <h3>
+                          <ol>
+                            <li>Una actividad es una unidad de trabajo que es asignado a un rol específico</li>
+                            <li>Las actividades tienen un objetivo concreto</li>
+                          </ol>
+                        </h3>
+                        </div>
+                        <div class="tab-pane fade show  text-justify" id="list-6D" role="tabpanel" aria-labelledby="list-6D-list ">
+                        <h3>
+                          <ol>
+                            <li>Un producto o artefacto es un trozo de información que es producido, modificado o usado durante el proceso de desarrollo de software</li>
+                            <li>Los productos son los resultados tangibles del proyecto, las cosas que va creando y usando hasta obtener el producto final</li>
+                          </ol>
+                        </h3>
+                        </div>
+                        <div class="tab-pane fade show  text-justify" id="list-6E" role="tabpanel" aria-labelledby="list-6E-list ">
+                        <h3>
+                          <ol>
+                            <li>Un flujo de trabajo es una relación de actividades que producen resultados observables</li>
+
+                          </ol>
+                        </h3>
+                        </div>
+                        <div class="tab-pane fade show  text-justify" id="list-6F" role="tabpanel" aria-labelledby="list-6F-list ">
+                        <h3>
+                          <ol>
+                            <li>Entender la estructura y la dinámica de la organización para la cual el sistema va ser desarrollado.</li>
+                            <li>Entender el problema actual en la organización, objetivo e identificar potenciales mejoras.</li>
+                            <li>Asegurar que clientes, usuarios finales y desarrolladores tengan un entendimiento común de la organización objetivo.</li>
+                          </ol>
+                        </h3>
+                        </div>
+                        <div class="tab-pane fade show  text-justify" id="list-6G" role="tabpanel" aria-labelledby="list-6G-list ">
+                        <h3>
+                          <ol>
+                            <li>En él se establece qué tiene que hacer exactamente el sistema que se construye.</li>
+                            <li>En esta línea los requisitos son el contrato que se debe cumplir, de modo que los usuarios finales tienen que comprender y aceptar los requisitos que se especifique.</li>
+                            <li>Para capturar los requisitos es preciso entrevistar a todos los interesados en el proyecto, y anotar todas sus peticiones. A partir de ellas hay que descubrir lo que necesitan y expresarlo en forma de requisitos.</li>
+                          </ol>
+                        </h3>
+                        </div>
+                        <div class="tab-pane fade show  text-justify" id="list-6H" role="tabpanel" aria-labelledby="list-6H-list ">
+                        <h3>
+                          <ol>
+                            <li>El objetivo de este flujo de trabajo es traducir los requisitos a una especificación que describe cómo implementar el sistema.</li>
+                            <li>El análisis consiste en obtener una visión del sistema que se preocupa de ver qué hace, de modo que sólo se interesa por los requisitos funcionales.</li>
+                            <li>El diseño es un refinamiento del análisis que tiene en cuenta los requisitos no funcionales, en definitiva cómo cumple el sistema sus objetivos.</li>
+                          </ol>
+                        </h3>
+                        </div>
+                        <div class="tab-pane fade show  text-justify" id="list-6I" role="tabpanel" aria-labelledby="list-6I-list ">
+                        <h3>
+                          <ol>
+                            <li>En este flujo de trabajo se implementan las clases y objetos</li>
+                            <li>El resultado final de este flujo de trabajo es un sistema ejecutable</li>
+                            <li>Planificar qué subsistemas deben ser implementados y en qué orden deben ser integrados, formando el plan de Integración</li>
+                            <li>Cada implementador decide en qué orden implementa los elementos del subsistema (notifica, prueba, integra)</li>
+                          </ol>
+                        </h3>
+                        </div>
+                        <div class="tab-pane fade show  text-justify" id="list-6J" role="tabpanel" aria-labelledby="list-6J-list ">
+                        <h3>
+                          <ol>
+                            <li>Encontrar y documentar defectos en la calidad del software</li>
+                            <li>Generalmente asesora sobre la calidad del software percibida</li>
+                            <li>Provee la validación de los supuestos realizados en el diseño y especificación de requisitos por medio de demostraciones concretas</li>
+                            <li>Verificar las funciones del producto de software según lo diseñado</li>
+                            <li>Verificar que los requisitos tengan su apropiada implementación</li>
+                            <li>Despliegue</li>
+                            <li>Gestion de proyecto</li>
+                            <li>Configuracion y control de cambios</li>
+                          </ol>
+                        </h3>
+                        </div>
+                        <div class="tab-pane fade show  text-justify" id="list-6K" role="tabpanel" aria-labelledby="list-6K-list ">
+                        <h3>
+                          <ol>
+                            <li></li>
+                          </ol>
+                        </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Victor-->
+          <div class="carousel-item">
+            <div id="temaA_1">
+              <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                <div class="display-4" >Almacenamiento en al nube<div class="text-right"> <img src="./images/victor.png" style="width:90px;height:90px;"> </div> </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="list-group" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action active" id="list-7A-list" data-toggle="list" href="#list-7A" role="tab" aria-controls="7A">Almacenamiento en al nube</a>
+                        <a class="list-group-item list-group-item-action " id="list-78-list" data-toggle="list" href="#list-78" role="tab" aria-controls="78">Funcionamieto</a>
+                        <a class="list-group-item list-group-item-action " id="list-79-list" data-toggle="list" href="#list-79" role="tab" aria-controls="79">Beneficio</a>
+                        <a class="list-group-item list-group-item-action " id="list-80-list" data-toggle="list" href="#list-80" role="tab" aria-controls="80">Desventajas</a>
+                        <a class="list-group-item list-group-item-action " id="list-81-list" data-toggle="list" href="#list-81" role="tab" aria-controls="81">Practicas para seguridad en la nube</a>
+                        <a class="list-group-item list-group-item-action " id="list-82-list" data-toggle="list" href="#list-82" role="tab" aria-controls="82">Proveedores</a>
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active text-justify" id="list-7A" role="tabpanel" aria-labelledby="list-7A-list ">
+                        <h3>
+                            Es un modelo de informática que almacena los datos en internet a través de un proveedor que administra y opera el almacenamiento en la nube como un servicio
+                        </h3>
+                        </div>
+                      <div class="tab-pane fade show  text-justify" id="list-78" role="tabpanel" aria-labelledby="list-78-list ">
+                      <h3>
+                        Se compra a un proveedor con un modelo de pago de uso los proveedores administran la capacidad, seguridad y la durabilidad
+                        <br><br>
+                        Las app tiene acceso mediante protocolos de almacenamiento tradicionales FC-AL (protocolo de quien puede comunicarse), FC-SW (protocolo de conectar las comunicaciones entre dispositivos y evita colisiones)) o mediante una api
+                      </h3>
+                      </div>
+                      <div class="tab-pane fade show  text-justify" id="list-79" role="tabpanel" aria-labelledby="list-79-list ">
+                      <h3>
+                        <ol>
+                          <li>No es necesario invertir en hardware, seguridad</li>
+                          <li>Puede agregar o eliminar capacidad </li>
+                          <li>Acceso a la información en todo momento y en cualquier parte </li>
+                          <li>Realización de copia de seguridad </li>
+                        </ol>
+                      </h3>
+                      </div>
+                      <div class="tab-pane fade show  text-justify" id="list-80" role="tabpanel" aria-labelledby="list-80-list ">
+                      <h3>
+                        <ol>
+                          <li>Acceso a internet </li>
+                          <li>Quedarnos temporalmente sin acceso a nuestra información si el proveedor experimenta problemas técnicos con sus servidores </li>
+                        </ol>
+                      </h3>
+                      </div>
+                      <div class="tab-pane fade show  text-justify" id="list-81" role="tabpanel" aria-labelledby="list-81-list ">
+                      <h3>
+                        <ol>
+                          <li>Establecer un sólido acuerdo de nivel de servicios (SLA </li>
+                          <li>Establecer el diseño de la arquitectura de seguridad  </li>
+                          <li>Permitir el Ethical Hacking</li>
+                        </ol>
+                      </h3>
+                      </div>
+                      <div class="tab-pane fade show  text-justify" id="list-82" role="tabpanel" aria-labelledby="list-82-list ">
+                      <h3>
+                        <div class="text-center"> <img src="./images/nube.png" style="width:650px;height:400px;"> </div>
+                      </h3>
+                      </div>
+                    </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Referencias-->
+          <div class="carousel-item">
+            <div id="temaA_1">
+              <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                <div class="display-4" >Referencias </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="list-group" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action active" id="list-8A-list" data-toggle="list" href="#list-8A" role="tab" aria-controls="8A">Referencias</a>
+                      </div>
+                    </div>
+                    <div class="col-8">
+                      <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active text-justify" id="list-7A" role="tabpanel" aria-labelledby="list-7A-list ">
+                        <h6>
+                          <ol>
+                            <li>AMAZON. (2020). QUE ES ALAMCENAMIENTO EN LA NUBE. 16/20/2020, de AMAZON Sitio web: https://aws.amazon.com/es/what-is-cloud-storage/</Li>
+
+                            <li>IONOS. (2019). ALMACENAMIENTO EN LA NUBE. 16/02/2020, de DIGITAL GUIDE Sitio web: https://www.ionos.es/digitalguide/servidores/herramientas/servicios-de-almacenamiento-en-la-nube-comparativa/</Li>
+
+                            <li>WIKIPEDIA. (2019). REA DE ARE DE ALMACENAMIENTO. 16/02/2020, de WIKIPEDIA Sitio web: https://es.wikipedia.org/wiki/Red_de_%C3%A1rea_de_almacenamiento#Protocolos</Li>
+
+                            <li>OPTICAL NETWORKS . (2019). SEGURIDAD EN LA NUBE . 16/02/2019, de ON Sitio web: /https://www.optical.pe/que-es-la-seguridad-en-la-nube/</Li>
+                            <li>Peraire C.,Edwards M.,Fernandes A.,Mancin E.,Carrol K. (2007).The IBM Rational Unified Process for System z.Redbooks,Primerda Edición.</li>
+                            <li>Grupo Isaias Carrillso Perez.(2008).Metodología del desarrollo de software. New York. Editorial and Write</li>
+                            <li>Sommeville, I. (2005). Ingenieria del Software, Edicion septima.Pearson Addison. España. Editorial Wesley</li>
+                          </ol>
+                        </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class=" p-3 mb-2 bg-dark text-white carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class=" p-3 mb-2 bg-dark text-white carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+
+    </div>
+  </body>
+</html>
