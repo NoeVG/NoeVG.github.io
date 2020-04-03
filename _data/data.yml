@@ -1,0 +1,36 @@
+sidebar:
+  # Profile information
+  name: Noé Vásquez Godínez
+  tagline: Computer Engineering Student
+  avatar: https://avatars2.githubusercontent.com/u/19269833?s=460&v=4
+
+career-profile:
+    title: Career Profile
+    summary: |
+      Estudiante de ultimo año de Ingeniería en Computación,
+      Asistente de investigación en el proyecto Picking and Batching Problem and
+      Sequencing Orders in Warehouses, miembro activo del Seminario de Investigacion
+      en Simulación y Análisis de Datos.
+
+      Con participación en diversos proyectos de
+      automatización, desarrollo web, IoT, desarrollador de software con interacción
+      hombre-maquina e inteligencia artificial, experiencia en redes y comunicaciones.
+
+experiences:
+  - experience: Desarrollo de Algoritmos
+    topics:
+      - Evolutivos
+      - Redes Neuronales
+      - Clustering
+
+  - experience: Administrador Sistemas Linux
+    topics:
+      - Debian GNU/Linux
+      - Fedora Linux
+      - Backtrack 5r3 Linux
+      - Kali Linux
+  - experience: Desarrollador de Software
+
+  - experience: Desarrollador Web Back-end
+
+  - experience: Desarrollador Web Front-end

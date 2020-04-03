@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    {% include head_main.html %}
+  </head>
+  <body>
+    {% include navegacion.html %}
+    {% assign profile = site.data.data.sidebar %}
+    {% assign profile-career = site.data.data.career-profile %}
+<br>
+<br>
+    <div class="container">
+      <div class="row">
+       <div class="img-fluid col-4 p-3 mb-2 bg-secondary text-white">
+         <center>
+         <div class="card bg-secondary text-white ">
+           <img class="card-img-top" src="{{profile.avatar}}" alt="Card image cap">
+           <div class="card-body container-fluid">
+             <h4>{{profile.name}}</h4>
+             <p class="card-text container-fluid">{{profile.tagline}}</p>
+           </div>
+         </div>
+         </center>
+       </div>
+       <div class="col-8 p-3 mb-2 bg-light text-dark">
+         <h3>About</h3>
+         <p  class="text-justify">{{profile-career.summary}}</p>
+
+         <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+           <div class="card-header">
+             <h5 class="card-title">Skills</h5>
+           </div>
+               <div class="card-body">
+                   <ol type=disc>
+                     {% for exp in site.data.data.experiences %}
+                        <li> {{exp.experience}} </li>
+                     {% endfor %}
+                   </ol>
+               </div>
+           </div>
+       </div>
+      </div>
+    </div>
+  </body>
+</html>
