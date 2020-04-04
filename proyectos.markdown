@@ -56,5 +56,13 @@ proyectos:
     h: a005
     about: |
           Build dynamics Interfaces with JAVA
-    link: /proyectos_data/dynamics_java        
+    link: /proyectos_data/dynamics_java
+
+  - title_proyecto: Construcción base para monitor de pc para una correcta Ergonomía
+    id: p006
+    h: a006
+    about: |
+          Construcción de una Base de Madera para el monitor de PC,
+          esto con la finalidad de mantener una correcta Ergonomía.
+    link: /proyectos_data/base_monitor        
 ---
