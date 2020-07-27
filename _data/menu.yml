@@ -1,11 +1,2 @@
-- menu: "Home"
-  url: /
-
-- menu: "About"
-  url: /
-
-- menu: "Contact"
-  url: /
-
 - menu: "Projects"
   url: /
