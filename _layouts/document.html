@@ -13,43 +13,7 @@
 
 		<title>{{ page.title }}</title>
 	</head>
-	
-	<body class="p-3 mb-2 bg-dark text-dark">
-		<div class="container">
-			
-			{% include menu.html %}
-			
-			{{content}}
-	 			 		
-	 		<div class="container">
-	 		<div class="row p-3 mb-2 " style="background-color:#1b262c; color:white;">
-    			<div class="col-sm-2">
-	      	
-	    		</div>
-	    		<div class="col-sm-4">
-	      			{% include photo.html %}
-	    		</div>
-	    		<div class="col-sm-4">
-					{% include education.html %}				
-	    		</div>
-	    		<div class="col-sm-2">
-			 		
-	    		</div>
-  			</div>
-
-	 		<div class="row p-3 mb-2  text-white" style="background-color:#0f4c75;">
-	    		<div class="col-sm-2" >
-			 		
-	    		</div>
-	    		<div class="col-sm-8">
-			 		{% include experience.html %}
-	    		</div>
-	    		<div class="col-sm-2">
-			 		
-	    		</div>
-			</div>
-			
-			</div>
-		</div>
+	<body >
+		<div class="container">{{content}}</div>	
 	</body>
 </html>
