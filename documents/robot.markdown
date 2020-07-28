@@ -4,12 +4,35 @@ tile: Robot Móvil
 layout: document
 
 ---
+# Resumen
+En este documento se presenta la implementación de un robot móvil diferencial,
+haciendo uso de electrónica como Raspeberry PI, se hace uso de
+visión por computadora para desarrollar la autonomía del robot, ademas
+se desarrollo el control remoto mediante smartphone y visión con Oculus.
+
+**Palabras clave:** Visión por Computadora, SLAM, RGB-D
+
+# Abstract
+In this document the implementation of a differential mobile robot is presented, using electronics such as Raspeberry PI, computer vision is used to develop the autonomy of the robot, and remote control by smartphone and vision with Oculus was developed.
+
+**Keywords:** Computer Vision, SLAM, RGB-D
 # Introducción
 
-Computer vision is an interdisciplinary scientific field that deals with how computers can gain high-level understanding from digital images or videos. From the perspective of engineering, it seeks to understand and automate tasks that the human visual system can do.
+El objetivo de este proyecto es implementar un robot móvil diferencial,
+mediante el hardware Raspeberry PI y electrónica básica.
 
-Computer vision tasks include methods for acquiring, processing, analyzing and understanding digital images, and extraction of high-dimensional data from the real world in order to produce numerical or symbolic information, e.g. in the forms of decisions. Understanding in this context means the transformation of visual images (the input of the retina) into descriptions of the world that make sense to thought processes and can elicit appropriate action. This image understanding can be seen as the disentangling of symbolic information from image data using models constructed with the aid of geometry, physics, statistics, and learning theory.
+Este robot móvil debe contar con:
+- Dos camaras
+- Sensores:
+  - Temperatura
+  - Proximidad
+  - IMU
+- Microfono
+- Camara RGB-Depth
 
-The scientific discipline of computer vision is concerned with the theory behind artificial systems that extract information from images. The image data can take many forms, such as video sequences, views from multiple cameras, multi-dimensional data from a 3D scanner or medical scanning device. The technological discipline of computer vision seeks to apply its theories and models to the construction of computer vision systems.
+Una vez desarrollado el robot con el hardware requerido,
+se implementara técnicas de Visión por Computadora para
+desarrollar la autonomía del robot.
 
-Sub-domains of computer vision include scene reconstruction, event detection, video tracking, object recognition, 3D pose estimation, learning, indexing, motion estimation, visual servoing, 3D scene modeling, and image restoration.
+Así mismo se debe desarrollar el software para un control
+y visión mediante smartphone la visión sera con Oculus.
