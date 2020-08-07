@@ -1,0 +1,47 @@
+{
+	"teachers":[
+		{
+			"id":"t0",
+			"name":"Linus Benedict Torvalds",
+			"age":"50",
+			"photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg/220px-LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg",
+			"nationality":"Finnish, American ",
+			"almamater":"University of Helsinki",
+			"email":"torvalds@osdl.org",
+			"ext":"1058",
+			"lv":["Software engineer","Hardware","OpenSource"],
+			"reconociminetos":["Developer Kernel Linux","Developer Git","Foundation Linux/Foundation"],
+			"cites":["2018-IEEE Masaru Ibuka Consumer Electronics Award","2014-IEEE Computer Pioneer Award","2012-Internet Hall of Fame "],
+			
+			"about":"Software engineer who is the creator and, historically, the principal developer of the Linux kernel, which is the kernel for GNU/Linux operating systems (distributions) and other operating systems such as Android and Chrome OS. He also created the distributed version control system Git and the scuba dive logging and planning software Subsurface"
+		},
+		{
+			"id":"t1",
+			"name":"Richard Matthew Stallman",
+			"age":"67",
+			"photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Richard_Stallman_at_LibrePlanet_2019.jpg/330px-Richard_Stallman_at_LibrePlanet_2019.jpg",
+			"nationality":"New York, US",
+			"almamater":"Massachusetts Institute of Technology",
+			"email":"stallman@gnu.org",
+			"ext":"1057",
+			"lv":["Software engineer","Hardware","OpenSource"],
+			"reconociminetos":["Developer Kernel Linux","Developer Git","Foundation Linux/Foundation"],
+			"cites":["2018-IEEE Masaru Ibuka Consumer Electronics Award","2014-IEEE Computer Pioneer Award","2012-Internet Hall of Fame "],
+			"about":" is an American free software movement activist and programmer. He campaigns for software to be distributed in a manner such that its users receive the freedoms to use, study, distribute, and modify that software. Software that ensures these freedoms is termed free software. Stallman launched the GNU Project, founded the Free Software Foundation, developed the GNU Compiler Collection and GNU Emacs, and wrote the GNU General Public License."
+		},
+		{
+			"id":"t2",
+			"name":"Ian Ashley Murdock",
+			"age":"42 /Died",
+			"photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Ian_Murdock_interview_at_Holiday_Club_hotel_2008_%282%29.jpg/375px-Ian_Murdock_interview_at_Holiday_Club_hotel_2008_%282%29.jpg",
+			"nationality":"Konstanz, West Germany",
+			"almamater":"Purdue University",
+			"email":"ian@debian.org",
+			"ext":"1054",
+			"lv":["Software engineer","Hardware","OpenSource"],
+			"reconociminetos":["Developer Debian","CTO of the Linux Foundation"],
+			"cites":["2018-IEEE Masaru Ibuka Consumer Electronics Award","2014-IEEE Computer Pioneer Award","2012-Internet Hall of Fame "],
+			"about":" is an American free software movement activist and programmer. He campaigns for software to be distributed in a manner such that its users receive the freedoms to use, study, distribute, and modify that software. Software that ensures these freedoms is termed free software. Stallman launched the GNU Project, founded the Free Software Foundation, developed the GNU Compiler Collection and GNU Emacs, and wrote the GNU General Public License."
+		}
+	]
+}
